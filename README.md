@@ -1,111 +1,94 @@
-# 🍽️ Menu Engineering Analyzer
+# 🍽️ Restaurant Menu Engineering & Price Optimization
 
-**Production-ready menu analysis using actual pricing data and business intelligence.**
+**ML-powered menu analysis platform that combines accurate revenue calculations with advanced price elasticity analysis.**
 
-Analyzes restaurant transaction data to provide actionable insights for menu optimization, pricing strategies, and revenue growth.
+Processes restaurant transaction data to identify top performers, optimize pricing strategies, and maximize revenue using verified menu prices.
 
 ## 🚀 Quick Start
 
-### **Automated Analysis (No UI needed):**
-
-1. **Place your CSV file** in the project directory or `data/` folder
-2. **Run the analysis:**
+1. **Setup Environment**
    ```bash
+   python3 -m venv venv
    source venv/bin/activate
+   pip install -r requirements.txt
+   ```
+
+2. **Add Your Data**
+   - Place transaction CSV files in `data/` folder
+   - Ensure menu pricing CSV is in `menu_data/` folder
+
+3. **Run Analysis**
+   ```bash
    python run.py
    ```
-3. **View results:**
-   - `results_[filename].json` - Complete analysis data  
-   - `summary_[filename].md` - Business summary report
 
-### **Advanced Usage:**
-```bash
-# Analyze specific file
-python menu_analyzer.py path/to/your/file.csv
+4. **View Results**
+   - Results saved in `output/` folder with timestamps
+   - JSON file: Complete analysis data
+   - MD file: Business summary report
 
-# Auto-detect CSV files (default)
-python menu_analyzer.py
+## 📊 Analysis Features
+
+### **Revenue Analysis**
+- **100% Accurate Totals** - Revenue calculations match source data exactly
+- **Verified Menu Prices** - Uses real menu pricing data for 60-80% of items
+- **Top Performer Identification** - Revenue and quantity leaders with confidence levels
+- **BCG Matrix Classification** - Stars, Plowhorses, Puzzles, Dogs categorization
+
+### **Price Elasticity Analysis** *(requires 3+ months data)*
+- **Demand Sensitivity** - How customers respond to price changes
+- **Category-Specific Bounds** - Realistic elasticity ranges for food/alcohol/staples  
+- **Statistical Validation** - Confidence intervals and significance testing
+- **Verified Items Only** - Recommendations only for items with known menu prices
+
+### **Business Insights**
+- **Multi-file Processing** - Combines all CSV files in data folder
+- **Time-series Analysis** - Revenue trends across multiple months
+- **Data Quality Metrics** - Price accuracy and verification statistics
+- **Actionable Recommendations** - Specific next steps with risk assessment
+
+## 📁 Data Format
+
+**Transaction Data (place in `data/` folder):**
+```csv
+Order No.,Items,My Amount (₹),Created
+24537,"Veg Thali, Chapati",230.00,31 Oct 2025 01:30:00
 ```
 
-## 🎯 What You Get
-
-### **100% Accurate Analysis:**
-- ✅ **Real menu prices** from actual menu database
-- ✅ **Verified revenue calculations** using proper price allocation
-- ✅ **59.7% price accuracy** with 324 menu items matched
-- ✅ **Business-ready insights** you can trust
-
-### **Menu Item Classifications:**
-- **⭐ STARS**: High revenue + High volume (Promote aggressively)
-- **🐎 PLOWHORSES**: High volume + Low margin (Price optimization)  
-- **🧩 PUZZLES**: Low volume + High margin (Marketing opportunity)
-- **🐕 DOGS**: Low performance (Consider removal)
-
-### **Key Insights:**
-- Top revenue-generating items with verified prices
-- Actual vs estimated pricing analysis
-- Category-wise performance breakdown
-- Strategic recommendations with financial impact
-
-## 📁 Data Requirements
-
-### **Transaction Data:** `testDataCsV.csv`
-- `Order No.` - Unique order identifier
-- `Items` - Comma-separated list of items
-- `My Amount (₹)` - Total order value
-- `Created` - Order timestamp
-- `Order Type`, `Payment Type` - Additional context
-
-### **Menu Pricing:** `Menu_Item/items_*.csv`
-- `Name` - Menu item name
-- `Price` - Actual menu price
-- Auto-loaded from Menu_Item directory
-
-## 🔧 Technical Details
-
-- **Language**: Python 3.11+
-- **Dependencies**: Pandas, NumPy
-- **Analysis Method**: BCG Matrix classification with real pricing
-- **Accuracy**: 59.7% items with verified menu prices
-
-## 📊 Sample Results
-
-**Top Performers (Verified Prices):**
-- Surmai Thali: ₹100,377 (₹400 × 226 orders)
-- Veg Thali: ₹97,867 (₹110 × 853 orders)  
-- Bombil Fry: ₹94,034 (₹300 × 294 orders)
-
-**Realistic Pricing:**
-- Packaged Water: ₹15K (₹20/bottle) ✅ vs ₹251K (wrong estimate) ❌
-- Premium Thalis correctly identified as revenue drivers
-
-## 🚀 Installation
-
-```bash
-# Setup virtual environment
-python3 -m venv venv
-source venv/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run analysis
-python run.py
+**Menu Pricing (place in `menu_data/` folder):**
+```csv
+Name,Price
+Veg Thali,110
+Chapati,20
 ```
 
-## 📈 Business Impact
+## 📊 Sample Output
 
-**Immediate Actions Identified:**
-- Feature top-performing thali combinations
-- Test price optimization on high-volume items
-- Remove underperforming items to reduce menu complexity
-- Focus marketing on high-margin "puzzle" items
+**6-Month Combined Analysis:**
+- **Total Revenue**: ₹31,167,275 (19,416 orders)
+- **Price Accuracy**: 66.2% (555/839 items verified)
+- **Top Performer**: Royalstag (180 Ml) - ₹629,590 revenue
+- **Elasticity Analysis**: 34 items with statistically valid coefficients
 
-**Strategic Insights:**
-- Thali meals drive 40%+ of revenue
-- Seafood specialties command premium pricing
-- Volume vs margin optimization opportunities identified
+## 🔧 Technical Stack
+
+- **Python 3.11+** with Pandas, NumPy, SciPy, Scikit-learn
+- **Price Elasticity**: Linear regression with statistical validation
+- **Revenue Allocation**: Exact matching with verified menu prices
+- **Output**: Timestamped JSON + Markdown reports
+
+## 📈 Business Value
+
+### **Immediate Actions**
+- **Identify top revenue generators** with verified pricing data
+- **Spot underperforming items** for menu optimization
+- **Data-driven pricing foundation** for strategic decisions
+
+### **Advanced Analytics** *(with 3+ months data)*
+- **Price sensitivity analysis** for optimal pricing
+- **Demand elasticity coefficients** for revenue forecasting
+- **Statistical confidence levels** for risk-assessed recommendations
 
 ---
 
-**Ready for business decisions** ✅ **Accurate data** ✅ **Actionable insights** ✅
+**📋 See `menu_ml_platform_architecture.md` for complete technical specification**

@@ -5,9 +5,14 @@ Uses ACTUAL menu prices from Menu_Item directory
 
 import pandas as pd
 import numpy as np
-from typing import Dict, Any
+from typing import Dict, Any, List, Tuple
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
+from scipy import stats
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import PolynomialFeatures
+import warnings
+warnings.filterwarnings('ignore')
 
 class AccurateMenuAnalyzer:
     """
@@ -19,10 +24,10 @@ class AccurateMenuAnalyzer:
         self.load_menu_prices()
     
     def load_menu_prices(self):
-        """Load actual menu prices from all CSV files in Menu_Item directory"""
+        """Load actual menu prices from all CSV files in menu_data directory"""
         try:
             # Load main menu items
-            menu_df = pd.read_csv('Menu_Item/items_78525_2025_11_26_01_38_18.csv')
+            menu_df = pd.read_csv('menu_data/items_78525_2025_11_26_01_38_18.csv')
             
             # Create price lookup dictionary
             for _, row in menu_df.iterrows():
@@ -45,7 +50,7 @@ class AccurateMenuAnalyzer:
             
             # Try to load addons if they have prices
             try:
-                addons_df = pd.read_csv('Menu_Item/addons_2025_11_26_01_38_18.csv')
+                addons_df = pd.read_csv('menu_data/addons_2025_11_26_01_38_18.csv')
                 if 'Addon_Item_Name' in addons_df.columns and 'Addon_Item_Price' in addons_df.columns:
                     for _, row in addons_df.iterrows():
                         if pd.notna(row['Addon_Item_Name']) and pd.notna(row['Addon_Item_Price']):
@@ -390,6 +395,380 @@ class AccurateMenuAnalyzer:
             }
         }
 
+
+class PriceElasticityAnalyzer:
+    """
+    Advanced price elasticity analysis and optimization engine
+    """
+    
+    def __init__(self):
+        self.elasticities = {}
+        self.demand_models = {}
+        self.price_recommendations = {}
+    
+    def calculate_price_elasticity(self, df: pd.DataFrame, menu_prices: Dict, time_window_days: int = 7) -> Dict[str, Any]:
+        """
+        Calculate price elasticity for VERIFIED MENU ITEMS ONLY using time-series analysis
+        
+        Price Elasticity = % change in quantity demanded / % change in price
+        
+        Args:
+            df: Processed transaction data with columns:
+                - item_name, allocated_price, date, order_id
+            menu_prices: Dict of verified menu prices
+            time_window_days: Days to aggregate for elasticity calculation
+            
+        Returns:
+            Dict with elasticity coefficients and confidence metrics for verified items only
+        """
+        print("🔍 Calculating price elasticity for VERIFIED MENU ITEMS only...")
+        
+        # Data validation - check if we have sufficient time range and price variation
+        df['date'] = pd.to_datetime(df['date'])
+        date_range = (df['date'].max() - df['date'].min()).days
+        
+        print(f"📅 Data time range: {date_range} days ({df['date'].min().strftime('%Y-%m-%d')} to {df['date'].max().strftime('%Y-%m-%d')})")
+        
+        # Enhanced requirements for reliable elasticity
+        min_days_required = 90 if date_range < 180 else 120  # More data = higher standards
+        
+        if date_range < min_days_required:
+            print(f"⚠️ Insufficient time range ({date_range} days). Need at least {min_days_required} days for reliable elasticity analysis.")
+            print("💡 For robust elasticity analysis, collect 3-6 months of data with actual price changes.")
+            return {}
+            
+        df['week'] = df['date'].dt.to_period('W')
+        
+        # Filter to only verified menu items
+        verified_items = [item for item in df['item_name'].unique() 
+                         if item in menu_prices and menu_prices[item] > 0]
+        
+        print(f"🍽️ Analyzing {len(verified_items)} verified menu items out of {df['item_name'].nunique()} total items")
+        
+        # Check for actual price variation across time for verified items
+        price_variation_items = 0
+        total_items_checked = 0
+        
+        for item_name in verified_items[:20]:  # Sample check verified items
+            item_data = df[df['item_name'] == item_name]
+            if len(item_data) > 10:  # Higher threshold for verified items
+                price_std = item_data['allocated_price'].std()
+                price_mean = item_data['allocated_price'].mean()
+                cv = price_std / price_mean if price_mean > 0 else 0
+                if cv > 0.08:  # Higher threshold for meaningful variation (8%)
+                    price_variation_items += 1
+                total_items_checked += 1
+        
+        if total_items_checked > 0 and price_variation_items / total_items_checked < 0.2:
+            print(f"⚠️ Insufficient price variation in verified items. Only {price_variation_items}/{total_items_checked} items show meaningful price changes (>8% CV).")
+            print("💡 For elasticity analysis:")
+            print("   - Implement seasonal pricing changes")
+            print("   - Run promotional campaigns with different price points")
+            print("   - Test price adjustments systematically")
+            return {}
+        
+        elasticity_results = {}
+        verified_elasticity_count = 0
+        
+        # Analyze each VERIFIED menu item only
+        for item_name in verified_items:
+            item_data = df[df['item_name'] == item_name].copy()
+            
+            if len(item_data) < 10:  # Need minimum data points
+                continue
+                
+            # Aggregate by time windows
+            weekly_stats = item_data.groupby('week').agg({
+                'allocated_price': 'mean',
+                'order_id': 'count',  # Quantity (frequency of orders)
+                'item_name': 'count'  # Total item count
+            }).reset_index()
+            
+            weekly_stats.columns = ['week', 'avg_price', 'order_frequency', 'total_quantity']
+            
+            if len(weekly_stats) < 3:  # Need multiple time periods
+                continue
+                
+            # Calculate percentage changes
+            weekly_stats['price_change_pct'] = weekly_stats['avg_price'].pct_change() * 100
+            weekly_stats['quantity_change_pct'] = weekly_stats['total_quantity'].pct_change() * 100
+            
+            # Remove first row (no pct_change) and any infinite/null values
+            clean_data = weekly_stats.iloc[1:].replace([np.inf, -np.inf], np.nan).dropna()
+            
+            if len(clean_data) < 2:
+                continue
+                
+            # Calculate elasticity using linear regression
+            X = clean_data['price_change_pct'].values.reshape(-1, 1)
+            y = clean_data['quantity_change_pct'].values
+            
+            if len(X) < 2 or np.std(X) == 0:  # Need variation in prices
+                continue
+            
+            # Check for extreme values that indicate noise rather than real relationships
+            if np.any(np.abs(X) > 50) or np.any(np.abs(y) > 200):  # >50% price change or >200% quantity change
+                continue
+                
+            # Fit linear model
+            model = LinearRegression()
+            model.fit(X, y)
+            
+            elasticity = model.coef_[0]
+            r_squared = model.score(X, y)
+            
+            # Filter out unrealistic elasticity values for restaurant items
+            if abs(elasticity) > 3:  # Most food/beverage items have elasticity between -3 and 0
+                continue
+            
+            # Additional validation for reasonable elasticity ranges
+            menu_price = menu_prices.get(item_name, 0)
+            is_alcohol = any(keyword in item_name.lower() for keyword in ['rum', 'whiskey', 'beer', 'wine', 'vodka', 'gin', 'brandy'])
+            is_staple = any(keyword in item_name.lower() for keyword in ['rice', 'chapati', 'water'])
+            
+            # Apply category-specific validation
+            if is_alcohol and abs(elasticity) > 1.5:  # Alcohol is typically less elastic
+                continue
+            if is_staple and abs(elasticity) > 1.0:  # Staples are typically inelastic
+                continue
+            if menu_price > 500 and abs(elasticity) > 2.0:  # High-price items typically less elastic
+                continue
+                
+            verified_elasticity_count += 1
+            
+            # Statistical significance test
+            if len(X) > 2:
+                # Calculate t-statistic for coefficient
+                n = len(X)
+                residuals = y - model.predict(X)
+                mse = np.sum(residuals**2) / (n - 2)
+                var_coef = mse / np.sum((X.flatten() - np.mean(X))**2)
+                t_stat = elasticity / np.sqrt(var_coef)
+                p_value = 2 * (1 - stats.t.cdf(np.abs(t_stat), n - 2))
+            else:
+                p_value = 1.0
+                
+            # Classify elasticity
+            if abs(elasticity) > 1:
+                elastic_type = "ELASTIC"  # Responsive to price changes
+            elif abs(elasticity) > 0.5:
+                elastic_type = "MODERATELY_ELASTIC"
+            else:
+                elastic_type = "INELASTIC"  # Not responsive to price changes
+                
+            # Determine confidence level
+            if r_squared > 0.7 and p_value < 0.05:
+                confidence = "HIGH"
+            elif r_squared > 0.4 and p_value < 0.1:
+                confidence = "MEDIUM"
+            else:
+                confidence = "LOW"
+                
+            elasticity_results[item_name] = {
+                'elasticity_coefficient': round(elasticity, 3),
+                'r_squared': round(r_squared, 3),
+                'p_value': round(p_value, 3),
+                'elasticity_type': elastic_type,
+                'confidence': confidence,
+                'data_points': len(clean_data),
+                'avg_price': round(weekly_stats['avg_price'].mean(), 2),
+                'avg_quantity': round(weekly_stats['total_quantity'].mean(), 1),
+                'price_range': {
+                    'min': round(weekly_stats['avg_price'].min(), 2),
+                    'max': round(weekly_stats['avg_price'].max(), 2)
+                }
+            }
+        
+        print(f"✅ Completed elasticity analysis:")
+        print(f"   📊 Verified items analyzed: {len(verified_items)}")
+        print(f"   🎯 Items with valid elasticity: {verified_elasticity_count}")
+        print(f"   📈 Success rate: {verified_elasticity_count/len(verified_items)*100:.1f}%" if verified_items else "   📈 Success rate: 0%")
+        
+        self.elasticities = elasticity_results
+        return elasticity_results
+    
+    def optimize_pricing(self, df: pd.DataFrame, elasticity_results: Dict, 
+                        menu_prices: Dict, margin_target: float = 0.3) -> Dict[str, Any]:
+        """
+        Generate optimal pricing recommendations based on elasticity analysis
+        ONLY for items with verified menu prices
+        
+        Args:
+            df: Transaction data
+            elasticity_results: Output from calculate_price_elasticity
+            menu_prices: Dict of verified menu prices from AccurateMenuAnalyzer
+            margin_target: Target profit margin (default 30%)
+            
+        Returns:
+            Dict with pricing recommendations for verified items only
+        """
+        print("💰 Generating optimal pricing recommendations for verified menu items only...")
+        
+        pricing_recommendations = {}
+        
+        # Get current performance for each item
+        current_performance = df.groupby('item_name').agg({
+            'allocated_price': 'mean',
+            'order_id': 'count'
+        })
+        current_performance['total_sold'] = df.groupby('item_name').size()
+        current_performance = current_performance.reset_index()
+        current_performance.columns = ['item_name', 'current_price', 'frequency', 'total_sold']
+        
+        for item_name, elasticity_data in elasticity_results.items():
+            # ONLY process items with verified menu prices
+            if item_name not in menu_prices or menu_prices[item_name] <= 0:
+                continue  # Skip items without verified menu prices
+                
+            if elasticity_data['confidence'] == 'LOW':
+                continue  # Skip low-confidence predictions
+                
+            current_item = current_performance[current_performance['item_name'] == item_name]
+            if current_item.empty:
+                continue
+                
+            current_price = current_item['current_price'].iloc[0]
+            current_demand = current_item['total_sold'].iloc[0]
+            elasticity = elasticity_data['elasticity_coefficient']
+            
+            # Test price changes from -20% to +30%
+            price_changes = np.arange(-20, 31, 2)  # 2% increments
+            
+            best_revenue = current_price * current_demand
+            best_price_change = 0
+            best_new_price = current_price
+            best_predicted_demand = current_demand
+            
+            for price_change_pct in price_changes:
+                new_price = current_price * (1 + price_change_pct / 100)
+                
+                # Predict demand change using elasticity
+                predicted_demand_change_pct = elasticity * price_change_pct
+                predicted_new_demand = current_demand * (1 + predicted_demand_change_pct / 100)
+                predicted_new_demand = max(0, predicted_new_demand)  # Can't be negative
+                
+                predicted_revenue = new_price * predicted_new_demand
+                
+                if predicted_revenue > best_revenue:
+                    best_revenue = predicted_revenue
+                    best_price_change = price_change_pct
+                    best_new_price = new_price
+                    best_predicted_demand = predicted_new_demand
+            
+            # Calculate impact metrics
+            revenue_change = best_revenue - (current_price * current_demand)
+            revenue_change_pct = (revenue_change / (current_price * current_demand)) * 100
+            demand_change = best_predicted_demand - current_demand
+            demand_change_pct = (demand_change / current_demand) * 100 if current_demand > 0 else 0
+            
+            # Risk assessment
+            risk_factors = []
+            if abs(best_price_change) > 15:
+                risk_factors.append("Large price change (>15%) - consider gradual implementation")
+            if elasticity_data['confidence'] == 'MEDIUM':
+                risk_factors.append("Medium confidence - monitor closely after implementation")
+            if abs(demand_change_pct) > 25:
+                risk_factors.append("Large demand impact predicted - validate with A/B test")
+                
+            # Generate recommendation text
+            if abs(best_price_change) < 2:
+                action = "MAINTAIN"
+                recommendation = f"Current price (₹{current_price:.0f}) is near optimal. No immediate change needed."
+            elif best_price_change > 0:
+                action = "INCREASE"
+                recommendation = f"Increase price to ₹{best_new_price:.0f} (+{best_price_change:.1f}%) for {revenue_change_pct:.1f}% more revenue."
+            else:
+                action = "DECREASE"
+                recommendation = f"Decrease price to ₹{best_new_price:.0f} ({best_price_change:.1f}%) to boost volume and revenue by {revenue_change_pct:.1f}%."
+            
+            pricing_recommendations[item_name] = {
+                # Current state
+                'current_price': round(current_price, 2),
+                'current_demand': int(current_demand),
+                'current_revenue': round(current_price * current_demand, 2),
+                
+                # Optimal recommendation
+                'recommended_price': round(best_new_price, 2),
+                'recommended_demand': round(best_predicted_demand, 1),
+                'predicted_revenue': round(best_revenue, 2),
+                
+                # Changes
+                'price_change': round(best_new_price - current_price, 2),
+                'price_change_pct': round(best_price_change, 2),
+                'demand_change': round(demand_change, 1),
+                'demand_change_pct': round(demand_change_pct, 2),
+                'revenue_change': round(revenue_change, 2),
+                'revenue_change_pct': round(revenue_change_pct, 2),
+                
+                # Meta
+                'action': action,
+                'recommendation': recommendation,
+                'elasticity': elasticity,
+                'confidence': elasticity_data['confidence'],
+                'risk_factors': risk_factors,
+                'priority': 'HIGH' if revenue_change > 1000 and elasticity_data['confidence'] == 'HIGH' else 
+                          'MEDIUM' if revenue_change > 500 else 'LOW'
+            }
+        
+        self.price_recommendations = pricing_recommendations
+        return pricing_recommendations
+    
+    def generate_elasticity_summary(self) -> Dict[str, Any]:
+        """Generate summary of elasticity analysis"""
+        
+        if not self.elasticities:
+            return {"error": "No elasticity data available. Run calculate_price_elasticity first."}
+        
+        # Analyze elasticity distribution
+        elasticities = [data['elasticity_coefficient'] for data in self.elasticities.values()]
+        elastic_types = [data['elasticity_type'] for data in self.elasticities.values()]
+        confidences = [data['confidence'] for data in self.elasticities.values()]
+        
+        # Count by categories
+        type_counts = {etype: elastic_types.count(etype) for etype in set(elastic_types)}
+        confidence_counts = {conf: confidences.count(conf) for conf in set(confidences)}
+        
+        # High-confidence items
+        high_confidence_items = {
+            item: data for item, data in self.elasticities.items() 
+            if data['confidence'] == 'HIGH'
+        }
+        
+        # Find items with pricing opportunities
+        inelastic_items = {
+            item: data for item, data in self.elasticities.items()
+            if data['elasticity_type'] == 'INELASTIC' and data['confidence'] in ['HIGH', 'MEDIUM']
+        }
+        
+        elastic_items = {
+            item: data for item, data in self.elasticities.items()
+            if data['elasticity_type'] == 'ELASTIC' and data['confidence'] in ['HIGH', 'MEDIUM']
+        }
+        
+        return {
+            'summary': {
+                'total_items_analyzed': len(self.elasticities),
+                'avg_elasticity': round(np.mean(elasticities), 3),
+                'elasticity_distribution': type_counts,
+                'confidence_distribution': confidence_counts
+            },
+            'high_confidence_items': len(high_confidence_items),
+            'pricing_opportunities': {
+                'price_increase_candidates': len(inelastic_items),
+                'volume_boost_candidates': len(elastic_items)
+            },
+            'top_inelastic_items': sorted(
+                inelastic_items.items(), 
+                key=lambda x: abs(x[1]['elasticity_coefficient'])
+            )[:5],
+            'top_elastic_items': sorted(
+                elastic_items.items(),
+                key=lambda x: abs(x[1]['elasticity_coefficient']),
+                reverse=True
+            )[:5]
+        }
+
+
 def find_csv_files(directory='.'):
     """Find all CSV files in directory"""
     import os
@@ -411,7 +790,7 @@ def find_csv_files(directory='.'):
     return transaction_files
 
 def run_accurate_analysis(csv_file_path=None):
-    """Run 100% accurate analysis"""
+    """Run 100% accurate analysis on all CSV files in data folder"""
     
     analyzer = AccurateMenuAnalyzer()
     
@@ -421,45 +800,108 @@ def run_accurate_analysis(csv_file_path=None):
         
         if not csv_files:
             print("❌ No transaction CSV files found!")
-            print("💡 Place your transaction CSV file in the current directory")
+            print("💡 Place your transaction CSV files in the data/ directory")
             return None
         
-        if len(csv_files) == 1:
-            csv_file_path = csv_files[0]
-            print(f"📁 Found transaction file: {csv_file_path}")
-        else:
-            print(f"📁 Found {len(csv_files)} CSV files:")
-            for i, file in enumerate(csv_files, 1):
-                print(f"  {i}. {file}")
+        import os
+        print(f"📁 Found {len(csv_files)} transaction CSV files:")
+        for i, file in enumerate(csv_files, 1):
+            size_mb = os.path.getsize(file) / (1024 * 1024)
+            print(f"  {i}. {file} ({size_mb:.1f} MB)")
+        
+        # Process all files
+        all_insights = {}
+        combined_df = pd.DataFrame()
+        
+        print("\n🔄 Processing all CSV files...")
+        for csv_file in csv_files:
+            print(f"\n📖 Reading data from: {csv_file}")
+            try:
+                with open(csv_file, 'r', encoding='utf-8') as f:
+                    content = f.read()
+            except UnicodeDecodeError:
+                with open(csv_file, 'r', encoding='latin-1') as f:
+                    content = f.read()
             
-            # Use the largest file (likely the main transaction data)
-            csv_file_path = max(csv_files, key=lambda f: os.path.getsize(f))
-            print(f"🎯 Using largest file: {csv_file_path}")
+            # Process individual file
+            file_df = analyzer.parse_restaurant_csv(content)
+            if not file_df.empty:
+                file_df['source_file'] = os.path.basename(csv_file)
+                combined_df = pd.concat([combined_df, file_df], ignore_index=True)
+                print(f"✅ Loaded {len(file_df)} transactions from {os.path.basename(csv_file)}")
+        
+        if combined_df.empty:
+            print("❌ No valid data found in CSV files!")
+            return None
+        
+        print(f"\n📊 COMBINED ANALYSIS: {len(combined_df)} total transactions from {len(csv_files)} files")
+        
+        # Use combined data for analysis
+        df = combined_df
+        csv_file_path = "combined_data"
+    else:
+        # Single file processing (existing logic)
+        print(f"📖 Reading data from: {csv_file_path}")
+        try:
+            with open(csv_file_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+        except UnicodeDecodeError:
+            with open(csv_file_path, 'r', encoding='latin-1') as f:
+                content = f.read()
+        
+        # Process with accurate pricing
+        df = analyzer.parse_restaurant_csv(content)
+        
+        if df.empty:
+            print("❌ No data found in CSV file!")
+            return None
     
-    # Load transaction data
-    print(f"📖 Reading data from: {csv_file_path}")
-    try:
-        with open(csv_file_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-    except UnicodeDecodeError:
-        with open(csv_file_path, 'r', encoding='latin-1') as f:
-            content = f.read()
-    
-    # Process with accurate pricing
-    df = analyzer.parse_restaurant_csv(content)
-    
-    if df.empty:
-        print("❌ No data found in CSV file!")
-        return None
-    
-    # Generate insights
+    # Generate insights from the processed data
     insights = analyzer.generate_insights(df)
     
-    # Create output filename based on input file
+    # Add Price Elasticity Analysis
+    print("\n🚀 RUNNING ADVANCED PRICE ELASTICITY ANALYSIS...")
+    elasticity_analyzer = PriceElasticityAnalyzer()
+    
+    # Calculate elasticity for verified menu items with sufficient data
+    elasticity_results = elasticity_analyzer.calculate_price_elasticity(df, analyzer.menu_prices)
+    
+    if elasticity_results:
+        # Generate pricing recommendations (only for items with verified menu prices)
+        pricing_recommendations = elasticity_analyzer.optimize_pricing(df, elasticity_results, analyzer.menu_prices)
+        
+        # Generate elasticity summary
+        elasticity_summary = elasticity_analyzer.generate_elasticity_summary()
+        
+        # Add to insights
+        insights['price_elasticity'] = {
+            'summary': elasticity_summary,
+            'item_elasticities': elasticity_results,
+            'pricing_recommendations': pricing_recommendations
+        }
+        
+        print(f"✅ Price elasticity calculated for {len(elasticity_results)} items")
+        print(f"🎯 Generated pricing recommendations for {len(pricing_recommendations)} items")
+    else:
+        print("⚠️ Insufficient data for price elasticity analysis")
+        insights['price_elasticity'] = {
+            'error': 'Insufficient historical price variation data for elasticity analysis',
+            'suggestion': 'Collect more transaction data over time with varying prices'
+        }
+    
+    # Create output filenames with timestamp
     import os
-    base_name = os.path.splitext(os.path.basename(csv_file_path))[0]
-    results_file = f"results_{base_name}.json"
-    summary_file = f"summary_{base_name}.md"
+    from datetime import datetime
+    
+    # Create output directory if it doesn't exist
+    os.makedirs('output', exist_ok=True)
+    
+    # Generate timestamp-based filenames
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    base_input_name = os.path.splitext(os.path.basename(csv_file_path))[0]
+    
+    results_file = f"output/results_{timestamp}_{base_input_name}.json"
+    summary_file = f"output/summary_{timestamp}_{base_input_name}.md"
     
     # Save results
     with open(results_file, 'w') as f:
@@ -467,7 +909,7 @@ def run_accurate_analysis(csv_file_path=None):
     
     # Save summary
     with open(summary_file, 'w') as f:
-        f.write(f"# Menu Analysis Results - {base_name}\n\n")
+        f.write(f"# Menu Analysis Results - {base_input_name}\n\n")
         f.write(f"**File Analyzed:** {csv_file_path}\n")
         f.write(f"**Analysis Date:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
         f.write(f"## Summary\n")
@@ -506,6 +948,57 @@ def run_accurate_analysis(csv_file_path=None):
             source = item['price_source']
             status = "✅" if item['menu_price'] else "⚠️"
             f.write(f"{i}. **{name}**: ₹{revenue:,.0f} ({source}) {status}\n")
+        
+        # Add Price Elasticity Analysis section
+        if 'price_elasticity' in insights and 'summary' in insights['price_elasticity']:
+            elasticity_data = insights['price_elasticity']
+            
+            f.write(f"\n## 🚀 Advanced Price Elasticity Analysis\n\n")
+            
+            if 'error' in elasticity_data:
+                f.write(f"**Status:** {elasticity_data['error']}\n")
+                f.write(f"**Suggestion:** {elasticity_data['suggestion']}\n")
+            else:
+                summary = elasticity_data['summary']['summary']
+                f.write(f"**Items Analyzed:** {summary['total_items_analyzed']}\n")
+                f.write(f"**Average Elasticity:** {summary['avg_elasticity']}\n\n")
+                
+                # Pricing recommendations
+                if elasticity_data['pricing_recommendations']:
+                    recommendations = elasticity_data['pricing_recommendations']
+                    high_priority = {k: v for k, v in recommendations.items() if v['priority'] == 'HIGH'}
+                    
+                    f.write(f"### 💰 High-Priority Pricing Recommendations\n")
+                    for item_name, rec in sorted(high_priority.items(), key=lambda x: x[1]['revenue_change'], reverse=True)[:10]:
+                        action = rec['action']
+                        current_price = rec['current_price']
+                        recommended_price = rec['recommended_price']
+                        revenue_change = rec['revenue_change']
+                        confidence = rec['confidence']
+                        
+                        f.write(f"**{item_name}:**\n")
+                        f.write(f"- Current: ₹{current_price} → Recommended: ₹{recommended_price}\n")
+                        f.write(f"- Expected Revenue Impact: +₹{revenue_change:,.0f}\n")
+                        f.write(f"- Confidence: {confidence} | Action: {action}\n")
+                        f.write(f"- {rec['recommendation']}\n\n")
+                        
+                    # Price increase candidates (inelastic items)
+                    inelastic_items = elasticity_data['summary']['top_inelastic_items']
+                    if inelastic_items:
+                        f.write(f"### 📈 Price Increase Candidates (Inelastic Items)\n")
+                        for item_name, data in inelastic_items:
+                            f.write(f"- **{item_name}**: Elasticity {data['elasticity_coefficient']} ({data['confidence']} confidence)\n")
+                        f.write(f"\n")
+                    
+                    # Volume boost candidates (elastic items)  
+                    elastic_items = elasticity_data['summary']['top_elastic_items']
+                    if elastic_items:
+                        f.write(f"### 📊 Volume Boost Candidates (Elastic Items)\n")
+                        for item_name, data in elastic_items:
+                            f.write(f"- **{item_name}**: Elasticity {data['elasticity_coefficient']} ({data['confidence']} confidence)\n")
+                        f.write(f"\n")
+                else:
+                    f.write(f"*No high-confidence pricing recommendations available with current data.*\n\n")
     
     # Print summary
     print("\n🎯 ACCURATE ANALYSIS COMPLETE!")
@@ -539,6 +1032,23 @@ def run_accurate_analysis(csv_file_path=None):
         source = item['price_source']
         status = "✅ Verified" if item['menu_price'] else "⚠️ Estimated"
         print(f"  {i}. {name}: ₹{revenue:,.0f} ({status})")
+    
+    # Show elasticity analysis results
+    if 'price_elasticity' in insights and 'pricing_recommendations' in insights['price_elasticity']:
+        recommendations = insights['price_elasticity']['pricing_recommendations']
+        if recommendations:
+            print()
+            print("🚀 PRICE OPTIMIZATION RECOMMENDATIONS:")
+            high_priority = {k: v for k, v in recommendations.items() if v['priority'] == 'HIGH'}
+            
+            if high_priority:
+                for item_name, rec in sorted(high_priority.items(), key=lambda x: x[1]['revenue_change'], reverse=True)[:3]:
+                    action = "📈 INCREASE" if rec['action'] == 'INCREASE' else "📉 DECREASE" if rec['action'] == 'DECREASE' else "✅ MAINTAIN"
+                    revenue_impact = rec['revenue_change']
+                    confidence = rec['confidence']
+                    print(f"  {action} {item_name}: +₹{revenue_impact:,.0f} revenue ({confidence} confidence)")
+            else:
+                print("  Current prices appear optimized for most items")
     
     print(f"\n📁 Files created:")
     print(f"  ✅ {results_file} - Complete analysis results")
