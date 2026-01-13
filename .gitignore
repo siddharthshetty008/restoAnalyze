@@ -8,11 +8,14 @@ venv/
 env/
 ENV/
 
-# Results and data files
-results_*.json
-summary_*.md
-*.csv
-!Menu_Item/*.csv
+# Results and data files - ignore old timestamped outputs
+output/database_results_*.json
+output/database_summary_*.json
+
+# Keep important data files
+!data/*.csv
+!menu_data/*.csv
+!output/unmatched_items_report.csv
 
 # IDE
 .vscode/

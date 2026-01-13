@@ -1,0 +1,552 @@
+Name,Online_Name,Description,Short_Code,Short_Code_2,Sap_Code,HSN_Code,Parent_Category,Category,Category_online_display,Price,Attributes,Goods_Services,"GST% (Allowed only 5,18,40)","Type (F=forwardTax,B=BackwardTax)","(Optional) Other Tax (TaxName+Type+value) (F-forward, B-Backward)",Unit,is_Self_Item_Recipe,minimum_stock_level,at_par_stock_level,Rank,Packing_Charges,Allow_Decimal_Qty,Addon_Group_Name,Addon_Group_Selection,Addon_Group_Min,Addon_Group_Max,Variation_group_name,Variation,Variation_Price,Variation_Sap_Code,Variation_Packing_Charges,Variation,Variation_Price,Variation_Sap_Code,Variation_Packing_Charges,Variation,Variation_Price,Variation_Sap_Code,Variation_Packing_Charges,Variation,Variation_Price,Variation_Sap_Code,Variation_Packing_Charges
+"Surmai Jumbo Tawa Fry","Surmai Jumbo Tawa Fry",,SJTF,,,,,"Gomantaks Special Fry","Special Fry",0,non-veg,,5,F,,,0,,,1,0,Yes
+"Surmai Jumbo Fry","Surmai Jumbo Fry",,SJF,,,,,"Gomantaks Special Fry","Special Fry",0,non-veg,,5,F,,,0,,,1,0,Yes
+"Surmai Tawa Fry(2Pcs)","Surmai Tawa Fry(2Pcs)",,STFP,,,,,"Gomantaks Special Fry","Special Fry",450,non-veg,,5,F,,,0,,,1,0,Yes
+"Surmai Fry (2Pcs)","Surmai Fry (2Pcs)",,SFP,,,,,"Gomantaks Special Fry","Special Fry",400,non-veg,,5,F,,,0,,,1,0,Yes
+"Pomfret Jumbo Tawa Fry","Pomfret Jumbo Tawa Fry",,PJTF,,,,,"Gomantaks Special Fry","Special Fry",0,non-veg,,5,F,,,0,,,1,0,Yes
+"Pomfret Jumbo Fry","Pomfret Jumbo Fry",,PJF,,,,,"Gomantaks Special Fry","Special Fry",0,non-veg,,5,F,,,0,,,1,0,Yes
+"Pomfret Billa Tawa Fry","Pomfret Billa Tawa Fry",,PBTF,,,,,"Gomantaks Special Fry","Special Fry",700,non-veg,,5,F,,,0,,,1,0,Yes
+"Pomfret Billa Fry","Pomfret Billa Fry",,PBF,,,,,"Gomantaks Special Fry","Special Fry",550,non-veg,,5,F,,,0,,,1,0,Yes
+"Pomfret Fry (2 Pc)","Pomfret Fry (2 Pcs)",,PFP,,,,,"Gomantaks Special Fry","Special Fry",450,non-veg,,5,F,,,0,,,1,0,Yes
+"Pomfret Tawa Fry (2Pc)","Pomfret Tawa Fry (2Pc)",,PTFP,,,,,"Gomantaks Special Fry","Special Fry",500,non-veg,,5,F,,,0,,,1,0,Yes
+"Halwa Jumbo Tawa Fry","Halwa Jumbo Tawa Fry",,HJTF,,,,,"Gomantaks Special Fry","Special Fry",0,non-veg,,5,F,,,0,,,1,0,Yes
+"Halwa Tawa Fry (2Pc)","Halwa Tawa Fry (2Pc)",,HTFP,,,,,"Gomantaks Special Fry","Special Fry",380,non-veg,,5,F,,,0,,,1,0,Yes
+"Rawas Jumbo Tawa Fry","Rawas Jumbo Tawa Fry",,RJTF,,,,,"Gomantaks Special Fry","Special Fry",0,non-veg,,5,F,,,0,,,1,0,Yes
+"Rawas Tawa Fry (2pc)","Rawas Tawa Fry (2pc)",,RTFP,,,,,"Gomantaks Special Fry","Special Fry",380,non-veg,,5,F,,,0,,,1,0,Yes
+"Rawas Fry (2pc)","Rawas Fry (2Pcs)",,RFP,,,,,"Gomantaks Special Fry","Special Fry",320,non-veg,,5,F,,,0,,,1,0,Yes
+"Bangda Tawa Fry","Bangda Tawa Fry",,BTF,,,,,"Gomantaks Special Fry","Special Fry",240,non-veg,,5,F,,,0,,,1,0,Yes
+"Bangda Fry","Bangda Fry",,BF,,,,,"Gomantaks Special Fry","Special Fry",220,non-veg,,5,F,,,0,,,1,0,Yes
+"Bombil Fry","Bombil Fry",,BOF,,,,,"Gomantaks Special Fry","Special Fry",300,non-veg,,5,F,,,0,,,1,0,Yes
+"Mandeli Fry","Mandeli Fry",,MF,,,,,"Gomantaks Special Fry","Special Fry",170,non-veg,,5,F,,,0,,,1,0,Yes
+"Squid Tawa Fry","Squid Tawa Fry",,STF,,,,,"Gomantaks Special Fry","Special Fry",430,non-veg,,5,F,,,0,,,1,0,Yes
+"Squid Fry","Squid Fry",,SF,,,,,"Gomantaks Special Fry","Special Fry",430,non-veg,,5,F,,,0,,,1,0,Yes
+"Lep Tawa Fry","Lep Tawa Fry",,LTF,,,,,"Gomantaks Special Fry","Special Fry",330,non-veg,,5,F,,,0,,,1,0,Yes
+"Lep Fry","Lep Fry",,LF,,,,,"Gomantaks Special Fry","Special Fry",300,non-veg,,5,F,,,0,,,1,0,Yes
+"Tari Fry","Tari Fry",,TF,,,,,"Gomantaks Special Fry","Special Fry",150,non-veg,,5,F,,,0,,,1,0,Yes
+"Tarli Tawa Fry","Tarli Tawa Fry",,TTF,,,,,"Gomantaks Special Fry","Special Fry",200,non-veg,,5,F,,,0,,,1,0,Yes
+"Kane Tawa Fry","Kane Tawa Fry",,KTF,,,,,"Gomantaks Special Fry","Special Fry",400,non-veg,,5,F,,,0,,,1,0,Yes
+"Kane Fry","Kane Fry",,KF,,,,,"Gomantaks Special Fry","Special Fry",400,non-veg,,5,F,,,0,,,1,0,Yes
+"Mori (Shark) Tawa Fry","Mori (Shark) Tawa Fry",,MSTF,,,,,"Gomantaks Special Fry","Special Fry",430,non-veg,,5,F,,,0,,,1,0,Yes
+"Mori (Shark) Fry","Mori (Shark) Fry",,MSF,,,,,"Gomantaks Special Fry","Special Fry",430,non-veg,,5,F,,,0,,,1,0,Yes
+"Prawns Tawa Fry","Prawns Tawa Fry",,PTF,,,,,"Gomantaks Special Fry","Special Fry",350,non-veg,,5,F,,,0,,,1,0,Yes
+"King Prawns Tawa Fry","King Prawns Tawa Fry",,KPTF,,,,,"Gomantaks Special Fry","Special Fry",650,non-veg,,5,F,,,0,,,1,0,Yes
+"King Prawns  Fry","King Prawns  Fry",,KPF,,,,,"Gomantaks Special Fry","Special Fry",650,non-veg,,5,F,,,0,,,1,0,Yes
+"King Prawns Butter Garlic","King Prawns Butter Garlic",,KPBG,,,,,"Gomantaks Special Fry","Special Fry",700,non-veg,,5,F,,,0,,,1,0,Yes
+"King Prawns Pepper Butter Garlic","King Prawns Pepper Butter Garlic",,KPPBG,,,,,"Gomantaks Special Fry","Special Fry",700,non-veg,,5,F,,,0,,,1,0,Yes
+"Prawns Fry","Prawns Fry",,PF,,,,,"Gomantaks Special Fry","Special Fry",425,non-veg,,5,F,,,0,,,1,0,Yes
+"Prawns Koliwada","Prawns Koliwada",,PK,,,,,"Gomantaks Special Fry","Special Fry",425,non-veg,,5,F,,,0,,,1,0,Yes
+"Mix Seafood Platter Tawa Fry","Mix Seafood Platter Tawa Fry",,MSPTF,,,,,"Gomantaks Special Fry","Special Fry",810,non-veg,,5,F,,,0,,,1,0,Yes
+"Jumbo Mix Seafood Platter Tawa Fry","Jumbo Mix Seafood Platter Tawa Fry","(Bill Pomfret Fry, Surmai Fry, Halwa Fry, Rawas Fry, Prawns Fry, Bombil Fry)","jumbo mix seafood pl",,,,,"Gomantaks Special Fry","Special Fry",1600,non-veg,,5,F,,,0,,,1,0,Yes
+"Mix Seafood Platter Fry","Mix Seafood Platter Fry",,MSPF,,,,,"Gomantaks Special Fry","Special Fry",750,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Roast Fry(8pc)","Chicken Roast Fry",,"chicken roast fry(8p",,,,,"Gomantaks Special Fry","Special Fry",400,non-veg,,5,F,,,0,,,1,0,Yes
+"Mutton Chop Fry(4Pc)","Mutton Chop Fry(4Pc)",,MCFP,,,,,"Gomantaks Special Fry","Special Fry",450,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Boneless Pepper","Chicken Boneless Pepper",,CBP,,,,,"Gomantaks Special Fry","Special Fry",400,non-veg,,5,F,,,0,,,1,0,Yes
+"Crab Jumbo Masala Fry","Crab Jumbo Masala Fry",,CJMF,,,,,"Konkan Swad Special Crabs","Konkan Swad Special Crabs",900,non-veg,,5,F,,,0,,,1,0,Yes
+"Crab Boneless Masala","Crab Boneless Masala",,CBM,,,,,"Konkan Swad Special Crabs","Konkan Swad Special Crabs",550,non-veg,,5,F,,,0,,,1,0,Yes
+"Crab Ghee Roast","Crab Ghee Roast",,CGRO,,,,,"Konkan Swad Special Crabs","Konkan Swad Special Crabs",0,non-veg,,5,F,,,0,,,1,0,Yes
+"Crab Lolipop (6 Pc)","Crab Lolipop (6 Pc)",,CLP,,,,,"Konkan Swad Special Crabs","Konkan Swad Special Crabs",450,non-veg,,5,F,,,0,,,1,0,Yes
+"Crab Bhurji","Crab Bhurji",,CBH,,,,,"Konkan Swad Special Crabs","Konkan Swad Special Crabs",650,non-veg,,5,F,,,0,,,1,0,Yes
+"Crab Butter Garlic","Crab Butter Garlic",,CBG,,,,,"Konkan Swad Special Crabs","Konkan Swad Special Crabs",0,non-veg,,5,F,,,0,,,1,0,Yes
+"Crab Butter Pepper Garlic","Crab Butter Pepper Garlic",,CBPG,,,,,"Konkan Swad Special Crabs","Konkan Swad Special Crabs",0,non-veg,,5,F,,,0,,,1,0,Yes
+"Crab Masala(small)","Crab Masala(small)",,CMSM,,,,,"Konkan Swad Special Crabs","Konkan Swad Special Crabs",380,non-veg,,5,F,,,0,,,1,0,Yes
+"Crab Masala Fry(small)","Crab Masala Fry(small)",,CMFS,,,,,"Konkan Swad Special Crabs","Konkan Swad Special Crabs",420,non-veg,,5,F,,,0,,,1,0,Yes
+"Stuffed Crab Masala Fry","Stuffed Crab Masala Fry",,SCMF,,,,,"Konkan Swad Special Crabs","Konkan Swad Special Crabs",0,non-veg,,5,F,,,0,,,1,0,Yes
+Lobster,Lobster,,L,,,,,"Konkan Swad Special Crabs","Konkan Swad Special Crabs",0,non-veg,,5,F,,,0,,,1,0,Yes
+"Jitada Fry","Jitada Fry",,JF,,,,,"Konkan Swad Special Fish","Konkan Swad Special Fish",350,non-veg,,5,F,,,0,,,1,0,Yes
+"Jitada Masala(two Pieces)","Jitada Masala(two Pieces)",,"jitada masala(two pi",,,,,"Konkan Swad Special Fish","Konkan Swad Special Fish",350,non-veg,,5,F,,,0,,,1,0,Yes
+"Jitada Tawa Fry(Two Pieces)","Jitada Tawa Fry(Two Pieces)",,JTFTP,,,,,"Konkan Swad Special Fish","Konkan Swad Special Fish",400,non-veg,,5,F,,,0,,,1,0,Yes
+"Jitada Jumbo Tawa Fry","Jitada Jumbo Tawa Fry",,JJTF,,,,,"Konkan Swad Special Fish","Konkan Swad Special Fish",0,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Masala (sagoti)","Chicken Masala (sagoti)",,CMSA,,,,,"Non-Veg Main Course","Non-Veg Main Course",260,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Masala Fry","Chicken Masala Fry",,CMF,,,,,"Non-Veg Main Course","Non-Veg Main Course",300,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Masala Boneless","Chicken Masala Boneless",,CMB,,,,,"Non-Veg Main Course","Non-Veg Main Course",300,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Masala Fry Boneless","Chicken Masala Fry Boneless",,CMFB,,,,,"Non-Veg Main Course","Non-Veg Main Course",320,non-veg,,5,F,,,0,,,1,0,Yes
+"Desi Chicken Masala (sagoti)","Desi Chicken Masala (sagoti)",,DCMS,,,,,"Non-Veg Main Course","Non-Veg Main Course",320,non-veg,,5,F,,,0,,,1,0,Yes
+"Desi Chicken Masala Fry","Desi Chicken Masala Fry",,DCMF,,,,,"Non-Veg Main Course","Non-Veg Main Course",350,non-veg,,5,F,,,0,,,1,0,Yes
+"Mutton Masala(sagoti)","Mutton Masala",,MMS,,,,,"Non-Veg Main Course","Non-Veg Main Course",350,non-veg,,5,F,,,0,,,1,0,Yes
+"Mutton Masala Fry","Mutton Masala Fry",,MMF,,,,,"Non-Veg Main Course","Non-Veg Main Course",390,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Handi","Chicken Handi",,CH,,,,,"Non-Veg Main Course","Non-Veg Main Course",0,non-veg,,5,F,,,0,,,1,0,Yes,,,,,Portion,Half,390,,0,Full,790,,0
+"Chicken Handi Boneless","Chicken Handi Boneless",,CHB,,,,,"Non-Veg Main Course","Non-Veg Main Course",0,non-veg,,5,F,,,0,,,1,0,Yes,,,,,Portion,Half,400,,0,Full,765,,0
+"Desi Chicken Handi","Desi Chicken Handi",,DCH,,,,,"Non-Veg Main Course","Non-Veg Main Course",0,non-veg,,5,F,,,0,,,1,0,Yes,,,,,Portion,Half,430,,0,Full,850,,0
+"Mutton Handi","Mutton Handi",,MH,,,,,"Non-Veg Main Course","Non-Veg Main Course",0,non-veg,,5,F,,,0,,,1,0,Yes,,,,,Portion,Half,460,,0,Full,900,,0
+"Chicken Kheema","Chicken Kheema",,CK,,,,,"Non-Veg Main Course","Non-Veg Main Course",350,non-veg,,5,F,,,0,,,1,0,Yes
+"Mutton Kheema","Mutton Kheema",,MK,,,,,"Non-Veg Main Course","Non-Veg Main Course",350,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Liver Masala","Chicken Liver Masala",,"chicken liver masala",,,,,"Non-Veg Main Course","Non-Veg Main Course",260,non-veg,,5,F,,,0,,,1,0,Yes
+"Mutton Liver Masala Fry","Mutton Liver Masala Fry",,MLMF,,,,,"Non-Veg Main Course","Non-Veg Main Course",390,non-veg,,5,F,,,0,,,1,0,Yes
+"Prawns Masala","Prawns Masala",,PMA,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",350,non-veg,,5,F,,,0,,,1,0,Yes
+"Prawns Masala Fry","Prawns Masala Fry",,PMF,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",390,non-veg,,5,F,,,0,,,1,0,Yes
+"Bangda Masala","Bangda Masala",,BMA,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",250,non-veg,,5,F,,,0,,,1,0,Yes
+"Shell Fish Masala","Shell Fish Masala",,SFM,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",350,non-veg,,5,F,,,0,,,1,0,Yes
+"Shell Fish Masala Fry","Shell Fish Masala Fry",,SFMF,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",380,non-veg,,5,F,,,0,,,1,0,Yes
+"Pomfret Masala (2 Pc)","Pomfret Masala (2 Pc)",,PMP,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",480,non-veg,,5,F,,,0,,,1,0,Yes
+"Pomfret Bill Masala","Pomfret Bill Masala",,PBM,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",550,non-veg,,5,F,,,0,,,1,0,Yes
+"Pomfret Jumbo Masala","Pomfret Jumbo Masala",,PJM,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",0,non-veg,,5,F,,,0,,,1,0,Yes
+"Surmai Masala","Surmai Masala",,SUM,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",400,non-veg,,5,F,,,0,,,1,0,Yes
+"Surmai Jumbo Masala","Surmai Jumbo Masala",,SJM,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",0,non-veg,,5,F,,,0,,,1,0,Yes
+"Tarli Masala","Tarli Masala",,TAM,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",150,non-veg,,5,F,,,0,,,1,0,Yes
+"Kane Masala ( Murdusa)","Kane Masala ( Murdusa)",,KMM,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",300,non-veg,,5,F,,,0,,,1,0,Yes
+"Lep Masala","Lep Masala",,LEM,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",260,non-veg,,5,F,,,0,,,1,0,Yes
+"Halwa Masala (2pc)","Halwa Masala (2pc)",,HMP,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",320,non-veg,,5,F,,,0,,,1,0,Yes
+"Halwa Jumbo Masala","Halwa Jumbo Masala",,HJM,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",0,non-veg,,5,F,,,0,,,1,0,Yes
+"Mori (shark) Masala","Mori (shark) Masala",,MSMA,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",400,non-veg,,5,F,,,0,,,1,0,Yes
+"Mori (shark) Masala Fry","Mori (shark) Masala Fry",,MSMF,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",430,non-veg,,5,F,,,0,,,1,0,Yes
+"Squid Masala","Squid Masala",,SQM,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",380,non-veg,,5,F,,,0,,,1,0,Yes
+"Squid Masala Fry","Squid Masala Fry",,SMF,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",410,non-veg,,5,F,,,0,,,1,0,Yes
+"Rawas Jumbo Masala","Rawas Jumbo Masala",,RJM,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",0,non-veg,,5,F,,,0,,,1,0,Yes
+"Rawas Masala (2pc)","Rawas Masala (2pc)",,RMP,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",320,non-veg,,5,F,,,0,,,1,0,Yes
+"Prawns Red Masala","Prawns Red Masala",,PRM,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",350,non-veg,,5,F,,,0,,,1,0,Yes
+"Mix Seafood Masala","Mix Seafood Masala",,MSM,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",750,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Rotti (kori Rotti)","Chicken Rotti (kori Rotti)",,CRKR,,,,,"Non-Veg Main Course","Non-Veg Main Course",350,non-veg,,5,F,,,0,,,1,0,Yes
+"Desi Chicken Rotti","Desi Chicken Rotti",,DCR,,,,,"Non-Veg Main Course","Non-Veg Main Course",400,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Vade","Chicken Vade",,CV,,,,,"Non-Veg Main Course","Non-Veg Main Course",460,non-veg,,5,F,,,0,,,1,0,Yes
+"Mutton Vade","Mutton Vade",,MUV,,,,,"Non-Veg Main Course","Non-Veg Main Course",550,non-veg,,5,F,,,0,,,1,0,Yes
+"Desi Chicken Vade","Desi Chicken Vade",,DCV,,,,,"Non-Veg Main Course","Non-Veg Main Course",510,non-veg,,5,F,,,0,,,1,0,Yes
+"Extra Vade(4pc)","Extra Vade(4pc)",,EVP,,,,,Extra,Extra,200,veg,,5,F,,,0,,,1,0,Yes
+"Extra Rice Rotti","Extra Rice Rotti",,ERR,,,,,Extra,Extra,120,veg,,5,F,,,0,,,1,0,Yes
+"Dal Fry","Dal Fry",,DF,,,,,"Veg Main Course","Veg Main Course",160,veg,,5,F,,,0,,,1,0,Yes
+"Dal Tadka","Dal Tadka",,DT,,,,,"Veg Main Course","Veg Main Course",200,veg,,5,F,,,0,,,1,0,Yes
+"Mix Veg","Mix Veg",,MIV,,,,,"Veg Main Course","Veg Main Course",250,veg,,5,F,,,0,,,1,0,Yes
+"Chicken Singapore Rice","Chicken Singapore Rice",,"chicken singapore ri",,,,,"Non Veg Chinese Starters","Non Veg Chinese Starters",310,non-veg,,5,F,,,0,,,1,0,Yes
+"Veg Handi","Veg Handi",,VH,,,,,"Veg Main Course","Veg Main Course",250,veg,,5,F,,,0,,,1,0,Yes
+"Paneer Bhurji","Paneer Bhurji",,PBH,,,,,"Veg Main Course","Veg Main Course",250,veg,,5,F,,,0,,,1,0,Yes
+"Paneer Mushroom Masala","Paneer Mushroom Masala",,PMM,,,,,"Veg Main Course","Veg Main Course",260,veg,,5,F,,,0,,,1,0,Yes
+"Paneer Masala","Paneer Masala",,PAM,,,,,"Veg Main Course","Veg Main Course",250,veg,,5,F,,,0,,,1,0,Yes
+"Prawns Butter Garlic","Prawns Butter Garlic",,per,,,,,"Non Veg Chinese Starters","Non Veg Chinese Starters",450,non-veg,services,5,F,,,0,,,1,0,Yes
+"Chana Masala","Chana Masala",,CHM,,,,,"Veg Main Course","Veg Main Course",200,veg,,5,F,,,0,,,1,0,Yes
+"Paneer Satey","Paneer Satey",,"paneer satey",,,,,"Veg Chinese Starters","Veg Chinese Starters",290,veg,services,5,F,,,0,,,1,0,Yes
+"Mushroom Masala","Mushroom Masala",,MUM,,,,,"Veg Main Course","Veg Main Course",250,veg,,5,F,,,0,,,1,0,Yes
+"Veg Biryani","Veg Biryani",,VB,,,,,"Rice Dishes","Rice Dishes",250,veg,,5,F,,,0,,,1,0,Yes
+"Veg Pulav","Veg Pulav",,VP,,,,,"Rice Dishes","Rice Dishes",250,veg,,5,F,,,0,,,1,0,Yes
+"Paneer Pulav","Paneer Pulav",,PAP,,,,,"Rice Dishes","Rice Dishes",260,veg,,5,F,,,0,,,1,0,Yes
+"Mushroom Pulav","Mushroom Pulav",,MUP,,,,,"Rice Dishes","Rice Dishes",260,veg,,5,F,,,0,,,1,0,Yes
+"Jeera Rice","Jeera Rice",,JIR,,,,,"Rice Dishes","Rice Dishes",170,veg,,5,F,,,0,,,1,0,Yes
+"Egg Biryani","Egg Biryani",,EB,,,,,"Rice Dishes","Rice Dishes",320,egg,,5,F,,,0,,,1,0,Yes
+"Chicken Dal Khichdi","Chicken Dal Khichdi",,CDK,,,,,"Rice Dishes","Rice Dishes",300,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Biryani","Chicken Biryani",,CB,,,,,"Rice Dishes","Rice Dishes",350,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Biryani Boneless","Chicken Biryani Boneless",,CBBO,,,,,"Rice Dishes","Rice Dishes",400,non-veg,,5,F,,,0,,,1,0,Yes
+"Mutton Biryani","Mutton Biryani",,MB,,,,,"Rice Dishes","Rice Dishes",400,non-veg,,5,F,,,0,,,1,0,Yes
+"Prawns Biryani","Prawns Biryani",,PB,,,,,"Rice Dishes","Rice Dishes",450,non-veg,,5,F,,,0,,,1,0,Yes
+"Crab Biryani Boneless","Crab Biryani Boneless",,CRBB,,,,,"Rice Dishes","Rice Dishes",500,non-veg,,5,F,,,0,,,1,0,Yes
+"Fish Pulav","Fish Pulav",,FIP,,,,,"Rice Dishes","Rice Dishes",600,non-veg,,5,F,,,0,,,1,0,Yes
+"Dal Khichdi","Dal Khichdi",,DK,,,,,"Rice Dishes","Rice Dishes",200,veg,,5,F,,,0,,,1,0,Yes
+"Dal Khichdi Tadka","Dal Khichdi Tadka",,DKT,,,,,"Rice Dishes","Rice Dishes",210,veg,,5,F,,,0,,,1,0,Yes
+"Curd Rice","Curd Rice",,CUR,,,,,"Rice Dishes","Rice Dishes",170,veg,,5,F,,,0,,,1,0,Yes
+"Ukda Rice","Ukda Rice",,UR,,,,,"Rice Dishes","Rice Dishes",150,veg,,5,F,,,0,,,1,0,Yes
+"Kollum Rice","Kollum Rice",,KR,,,,,"Rice Dishes","Rice Dishes",0,veg,,5,F,,,0,,,1,0,Yes,,,,,Portion,Half,60,,0,Full,100,,0
+"Steam Rice","Steam Rice",,STR,,,,,"Rice Dishes","Rice Dishes",0,veg,,5,F,,,0,,,1,0,Yes,,,,,Portion,Half,80,,0,Full,150,,0
+"Veg Hot & Sour Soup","Veg Hot & Sour Soup",,VHSS,,,,,"Chinese Soups","Chinese Soups",170,veg,,5,F,,,0,,,1,0,Yes
+"Veg Sweet Corn Soup","Veg Sweet Corn Soup",,VSCS,,,,,"Chinese Soups","Chinese Soups",170,veg,,5,F,,,0,,,1,0,Yes
+"Chicken Munchow Soup","Chicken Manchow Soup",,CMSO,,,,,"Chinese Soups","Chinese Soups",200,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Sweet Corn Soup","Chicken Sweet Corn Soup",,CSCS,,,,,"Chinese Soups","Chinese Soups",200,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Hot & Sour Soup","Chicken Hot & Sour Soup",,CHSS,,,,,"Chinese Soups","Chinese Soups",200,non-veg,,5,F,,,0,,,1,0,Yes
+"Crab Meat Soup","Crab Meat Soup",,CRMS,,,,,"Chinese Soups","Chinese Soups",250,non-veg,,5,F,,,0,,,1,0,Yes
+"Seafood Soup","Seafood Soup",,SES,,,,,"Chinese Soups","Chinese Soups",250,non-veg,,5,F,,,0,,,1,0,Yes
+"Veg Crispy","Veg Crispy",,VC,,,,,"Veg Chinese Starters","Veg Chinese Starters",230,veg,,5,F,,,0,,,1,0,Yes
+"Potato Crispy","Veg 65",,"potato crispy",,,,,"Veg Chinese Starters","Veg Chinese Starters",180,veg,,5,F,,,0,,,1,0,Yes
+"Gobi Munchurian","Gobi Munchurian",,GM,,,,,"Veg Chinese Starters","Veg Chinese Starters",220,veg,,5,F,,,0,,,1,0,Yes
+"Paneer 65","Paneer 65",,P65,,,,,"Veg Chinese Starters","Veg Chinese Starters",260,veg,,5,F,,,0,,,1,0,Yes
+"Veg Lolipop","Veg Lolipop",,"veg lolipop",,,,,"Veg Chinese Starters","Veg Chinese Starters",290,veg,,5,F,,,0,,,1,0,Yes
+"Paneer Hot Garlic","Paneer Hot Garlic",,"paneer hot garlic",,,,,"Veg Chinese Starters","Veg Chinese Starters",260,veg,,5,F,,,0,,,1,0,Yes
+"Paneer Chilli","Paneer Chilli Manchurian",,PCH,,,,,"Veg Chinese Starters","Veg Chinese Starters",260,veg,,5,F,,,0,,,1,0,Yes
+"Paneer Munchurian","Paneer Munchurian",,PMU,,,,,"Veg Chinese Starters","Veg Chinese Starters",260,veg,,5,F,,,0,,,1,0,Yes
+"Mushroom Chilly","Mushroom Chilli",,MC,,,,,"Veg Chinese Starters","Veg Chinese Starters",260,veg,,5,F,,,0,,,1,0,Yes
+"Veg Munchurian Dry","Veg Munchurian Dry",,VMD,,,,,"Veg Chinese Starters","Veg Chinese Starters",220,veg,,5,F,,,0,,,1,0,Yes
+"Chicken Chilly Dry","Chicken Chilli Dry",,CCD,,,,,"Non Veg Chinese Starters","Non Veg Chinese Starters",250,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Munchurian Dry","Chicken Manchurian Dry",,CMD,,,,,"Non Veg Chinese Starters","Non Veg Chinese Starters",250,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken 65","Chicken 65",,C65,,,,,"Non Veg Chinese Starters","Non Veg Chinese Starters",250,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Crispy","Chicken Crispy",,CCR,,,,,"Non Veg Chinese Starters","Non Veg Chinese Starters",270,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Lollypop","Chicken Lollipop",,CL,,,,,"Non Veg Chinese Starters","Non Veg Chinese Starters",240,non-veg,,5,F,,,0,,,1,0,Yes
+"Apple Chicken","Apple Chicken",,AC,,,,,"Non Veg Chinese Starters","Non Veg Chinese Starters",300,non-veg,,5,F,,,0,,,1,0,Yes
+"Prawns Manchurian","Prawn Chilli Manchurian",,PM,,,,,"Non Veg Chinese Starters","Non Veg Chinese Starters",430,non-veg,,5,F,,,0,,,1,0,Yes
+"Prawns Chilli","Prawns Chilli",,PC,,,,,"Non Veg Chinese Starters","Non Veg Chinese Starters",430,non-veg,,5,F,,,0,,,1,0,Yes
+"Prawns 65","Prawns 65",,PR65,,,,,"Non Veg Chinese Starters","Non Veg Chinese Starters",430,non-veg,,5,F,,,0,,,1,0,Yes
+"Prawns Schezwan","Prawns Schezwan",,PRS,,,,,"Non Veg Chinese Starters","Non Veg Chinese Starters",430,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Black Bean","Chicken Black Bean",,CBB,,,,,"Non Veg Chinese Starters","Non Veg Chinese Starters",330,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Oyster","Chicken Oyster",,CO,,,,,"Non Veg Chinese Starters","Non Veg Chinese Starters",330,non-veg,,5,F,,,0,,,1,0,Yes
+"Squid Chilly","Squid Chilly",,SC,,,,,"Non Veg Chinese Starters","Non Veg Chinese Starters",430,non-veg,,5,F,,,0,,,1,0,Yes
+"Squid Butter Garlic","Squid Butter Garlic",,SBG,,,,,"Non Veg Chinese Starters","Non Veg Chinese Starters",450,non-veg,,5,F,,,0,,,1,0,Yes
+"Veg Fried Rice","Veg Fried Rice",,VFR,,,,,"Veg Chinese Main Course","Veg Chinese Main Course",220,veg,,5,F,,,0,,,1,0,Yes
+"Veg Schezwan Fried Rice","Veg Schezwan Fried Rice",,VSFR,,,,,"Veg Chinese Main Course","Veg Chinese Main Course",230,veg,,5,F,,,0,,,1,0,Yes
+"Veg Combination Rice","Veg Combination Rice",,VCR,,,,,"Veg Chinese Main Course","Veg Chinese Main Course",250,veg,,5,F,,,0,,,1,0,Yes
+"Veg Triple Schezwan Rice","Veg Triple Schezwan Rice",,VTSR,,,,,"Veg Chinese Main Course","Veg Chinese Main Course",260,veg,,5,F,,,0,,,1,0,Yes
+"Veg Munchurian Rice","Veg Manchurian Fried Rice",,VMR,,,,,"Veg Chinese Main Course","Veg Chinese Main Course",260,veg,,5,F,,,0,,,1,0,Yes
+"Veg Hakka Noodles","Veg Hakka Noodles",,VHN,,,,,"Veg Chinese Main Course","Veg Chinese Main Course",240,veg,,5,F,,,0,,,1,0,Yes
+"Veg Schezwan Noodles","Veg Schezwan Noodles",,VSN,,,,,"Veg Chinese Main Course","Veg Chinese Main Course",240,veg,,5,F,,,0,,,1,0,Yes
+"Chicken Manchurian Rice","Chicken Manchurian Rice",,CMR,,,,,"Non - Veg Chinese Main Course","Non - Veg Chinese Main Course",310,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Triple Schezwan","Chicken Triple Schezwan",,CTS,,,,,"Non - Veg Chinese Main Course","Non - Veg Chinese Main Course",330,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Hakka Noodles","Chicken Hakka Noodles",,CHN,,,,,"Non - Veg Chinese Main Course","Non - Veg Chinese Main Course",270,non-veg,,5,F,,,0,,,1,0,Yes
+"Prawns Fried Rice","Prawns Fried Rice",,PFR,,,,,"Non - Veg Chinese Main Course","Non - Veg Chinese Main Course",380,non-veg,,5,F,,,0,,,1,0,Yes
+"Prawns Schezwan Fried Rice","Prawns Schezwan Fried Rice",,PSFR,,,,,"Non - Veg Chinese Main Course","Non - Veg Chinese Main Course",380,non-veg,,5,F,,,0,,,1,0,Yes
+"Prawns Hakka Noodles","Prawns Hakka Noodles",,PHN,,,,,"Non - Veg Chinese Main Course","Non - Veg Chinese Main Course",380,non-veg,,5,F,,,0,,,1,0,Yes
+"Prawns Schezwan Noodles","Prawns Schezwan Noodles",,PSN,,,,,"Non - Veg Chinese Main Course","Non - Veg Chinese Main Course",380,non-veg,,5,F,,,0,,,1,0,Yes
+"Egg Fried Noodles","Egg Fried Noodles",,EFN,,,,,"Non - Veg Chinese Main Course","Non - Veg Chinese Main Course",240,egg,,5,F,,,0,,,1,0,Yes
+"Egg Fried Rice","Egg Fried Rice",,EFR,,,,,"Non - Veg Chinese Main Course","Non - Veg Chinese Main Course",240,egg,,5,F,,,0,,,1,0,Yes
+"Chicken Fried Rice","Chicken Fried Rice",,CFR,,,,,"Non - Veg Chinese Main Course","Non - Veg Chinese Main Course",280,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Schezwan Rice","Chicken Schezwan Rice",,CSR,,,,,"Non - Veg Chinese Main Course","Non - Veg Chinese Main Course",290,non-veg,,5,F,,,0,,,1,0,Yes
+"Egg Omelette","Egg Omelette",,EO,,,,,"Egg Dishes","Egg Dishes",120,egg,,5,F,,,0,,,1,0,Yes
+"Boiled Eggs","Boiled Eggs",,BE,,,,,"Egg Dishes","Egg Dishes",70,egg,,5,F,,,0,,,1,0,Yes
+"Egg Bhurji","Egg Bhurji",,EBH,,,,,"Egg Dishes","Egg Dishes",130,egg,,5,F,,,0,,,1,0,Yes
+"Egg Half Fry","Egg Half Fry",,EHF,,,,,"Egg Dishes","Egg Dishes",80,egg,,5,F,,,0,,,1,0,Yes
+"Egg Masala","Egg Masala",,EM,,,,,"Egg Dishes","Egg Dishes",170,egg,,5,F,,,0,,,1,0,Yes
+"Egg Pakoda","Egg Pakoda",,EP,,,,,"Egg Dishes","Egg Dishes",140,egg,,5,F,,,0,,,1,0,Yes
+"Cheese Cube","Cheese Cube",,CC,,,,,Extra,Extra,60,veg,,5,F,,,0,,,1,0,Yes
+"Paneer Pakoda","Paneer Pakoda",,PPA,,,,,Extra,Extra,140,veg,,5,F,,,0,,,1,0,Yes
+"Roasted Papad","Roasted Papad",,RP,,,,,Extra,Extra,25,veg,,5,F,,,0,,,1,0,Yes
+"Fry Papad","Fry Papad",,FP,,,,,Extra,Extra,30,veg,,5,F,,,0,,,1,0,Yes
+"Masala Papad","Masala Papad",,MAP,,,,,Extra,Extra,60,veg,,5,F,,,0,,,1,0,Yes
+"Veg Raita","Veg Raita",,VR,,,,,Extra,Extra,60,veg,,5,F,,,0,,,1,0,Yes
+"Green Salad","Green Salad",,GS,,,,,Extra,Extra,100,veg,,5,F,,,0,,,1,0,Yes
+"Schezwan Sauce","Schezwan Sauce",,SS,,,,,Extra,Extra,30,veg,,5,F,,,0,,,1,0,Yes
+"Green Chutney","Green Chutney",,GC,,,,,Extra,Extra,30,veg,,5,F,,,0,,,1,0,Yes
+Sheng,Sheng,,SH,,,,,Extra,Extra,30,veg,,5,F,,,0,,,1,0,Yes
+Chakli,Chakli,,CHA,,,,,Extra,Extra,30,veg,,5,F,,,0,,,1,0,Yes
+"Masala Snacks","Masala Snacks",,MSN,,,,,Extra,Extra,50,veg,,5,F,,,0,,,1,0,Yes
+Solkadi,Solkadi,,SO,,,,,Extra,Extra,60,veg,,5,F,,,0,,,1,0,Yes
+Chapati,Chapati,,CHP,,,,,Extra,Extra,20,veg,,5,F,,,0,,,1,0,Yes
+"Neer Dosa Per Pc","Neer Dosa[4 Pcs]",,NDPP,,,,,Extra,Extra,20,veg,,5,F,,,0,,,1,0,Yes
+Bhakri,Bhakri,,BH,,,,,Extra,Extra,30,veg,,5,F,,,0,,,1,0,Yes
+"Bajri Roti","Bajri Roti",,BRO,,,,,Extra,Extra,40,veg,,5,F,,,0,,,1,0,Yes
+"Jawari Roti","jawari roti",,JR,,,,,Extra,Extra,40,veg,,5,F,,,0,,,1,0,Yes
+Kaju,Kaju,,K,,,,,Extra,Extra,100,veg,,5,F,,,0,,,1,0,Yes
+"Butter Kaju","Butter Kaju",,BK,,,,,Extra,Extra,120,veg,,5,F,,,0,,,1,0,Yes
+"Fish Gravy","Fish Gravy",,FG,,,,,Extra,Extra,140,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Gravy","Chicken Gravy",,CG,,,,,Extra,Extra,140,non-veg,,5,F,,,0,,,1,0,Yes
+"Paneer Ghee Roast","Paneer Ghee Roast",,PGRO,,,,,"Konkan Swad Special Ghee  Roast","Gheer Roast",350,veg,,5,F,,,0,,,1,0,Yes
+"Mushroom Ghee Roast","Mushroom Ghee Roast",,MGRO,,,,,"Konkan Swad Special Ghee  Roast","Gheer Roast",350,veg,,5,F,,,0,,,1,0,Yes
+"Chicken Ghee Roast","Chicken Ghee Roast",,CGR,,,,,"Konkan Swad Special Ghee  Roast","Gheer Roast",380,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Ghee Roast (boneless)","Chicken Ghee Roast (Boneless)",,CGRB,,,,,"Konkan Swad Special Ghee  Roast","Gheer Roast",400,non-veg,,5,F,,,0,,,1,0,Yes
+"Mutton Ghee Roast","Mutton Ghee Roast",,MGR,,,,,"Konkan Swad Special Ghee  Roast","Gheer Roast",450,non-veg,,5,F,,,0,,,1,0,Yes
+"Prawns Ghee Roast","Prawns Ghee Roast",,prgr,,,,,"Konkan Swad Special Ghee  Roast","Gheer Roast",550,non-veg,,5,F,,,0,,,1,0,Yes
+"Pomfret Ghee Roast BILLA","Pomfret Ghee Roast BILLA",,"pomfret ghee roast b",,,,,"Konkan Swad Special Ghee  Roast","Gheer Roast",700,non-veg,,5,F,,,0,,,1,0,Yes
+"Surmai Ghee Roast","Surmai Ghee Roast",,SGRO,,,,,"Konkan Swad Special Ghee  Roast","Gheer Roast",450,non-veg,,5,F,,,0,,,1,0,Yes
+"Bangda Ghee Roast","Bangda Ghee Roast",,BGR,,,,,"Konkan Swad Special Ghee  Roast","Gheer Roast",300,non-veg,,5,F,,,0,,,1,0,Yes
+"Halwa Ghee Roast","Halwa Ghee Roast",,HGR,,,,,"Konkan Swad Special Ghee  Roast","Gheer Roast",350,non-veg,,5,F,,,0,,,1,0,Yes
+"Rawas Ghee Roast","Rawas Ghee Roast",,RGR,,,,,"Konkan Swad Special Ghee  Roast","Gheer Roast",350,non-veg,,5,F,,,0,,,1,0,Yes
+"Squid Ghee Roast","Squid Ghee Roast",,SGR,,,,,"Konkan Swad Special Ghee  Roast","Gheer Roast",430,non-veg,,5,F,,,0,,,1,0,Yes
+"Potato Ghee Roast","Potato Ghee Roast",,PGR,,,,,"Konkan Swad Special Ghee  Roast","Gheer Roast",350,veg,,5,F,,,0,,,1,0,Yes
+"Veg Thali","Veg Thali",,VT,,,,,"Konkan Swad Special Thali (Thalis Available Only For Dine In)","Konkan Swad Special Thali (Thalis Available Only For Dine In)",110,veg,,5,F,,,0,,,1,0,Yes
+"Chicken Thali","Chicken Thali",,CT,,,,,"Konkan Swad Special Thali (Thalis Available Only For Dine In)","Konkan Swad Special Thali (Thalis Available Only For Dine In)",300,non-veg,,5,F,,,0,,,1,0,Yes
+"Mutton Thali","Mutton Thali",,MT,,,,,"Konkan Swad Special Thali (Thalis Available Only For Dine In)","Konkan Swad Special Thali (Thalis Available Only For Dine In)",430,non-veg,,5,F,,,0,,,1,0,Yes
+"Pomfret Thali","Pomfret Thali",,POT,,,,,"Konkan Swad Special Thali (Thalis Available Only For Dine In)","Konkan Swad Special Thali (Thalis Available Only For Dine In)",450,non-veg,,5,F,,,0,,,1,0,Yes
+"Surmai Thali","Surmai Thali",,ST,,,,,"Konkan Swad Special Thali (Thalis Available Only For Dine In)","Konkan Swad Special Thali (Thalis Available Only For Dine In)",400,non-veg,,5,F,,,0,,,1,0,Yes
+"Prawns Thali","Prawns Thali",,PRT,,,,,"Konkan Swad Special Thali (Thalis Available Only For Dine In)","Konkan Swad Special Thali (Thalis Available Only For Dine In)",400,non-veg,,5,F,,,0,,,1,0,Yes
+"Seafood Thali","Seafood Thali","(Prawns Masala, Mori Sukka, Shell Fish Sukka, Crab Masala, Fish Fry, 2 Chapati or 1 Bhakti, Half Rice, Solkadi)",KSSST,,,,,"Konkan Swad Special Thali (Thalis Available Only For Dine In)","Konkan Swad Special Thali (Thalis Available Only For Dine In)",550,non-veg,,5,F,,,0,,,1,0,Yes
+"Non-veg Thali","Non-veg Thali","(Chicken Masala, Mutton Masala, Liver Masala, Chicken Kheema, Egg Curry, Half Rice, 2 Chapati or 1 Bhakti, Half Rice, Solkadi)",KSSNVT,,,,,"Konkan Swad Special Thali (Thalis Available Only For Dine In)","Konkan Swad Special Thali (Thalis Available Only For Dine In)",500,non-veg,,5,F,,,0,,,1,0,Yes
+"Soft Drink 300 Ml","Soft Drink 300 Ml",,SDM300,,,,,Beverages,Beverages,40,veg,,5,F,,,0,,,1,0,Yes
+"Soft Drink 600 Ml","Soft Drink 600 Ml",,SDM600,,,,,Beverages,Beverages,70,veg,,5,F,,,0,,,1,0,Yes
+"Soda 500ml","Soda 500ml",,SM500,,,,,Beverages,Beverages,40,veg,,5,F,,,0,,,1,0,Yes
+"Soda 300ml","Soda 300ml",,SM300,,,,,Beverages,Beverages,30,veg,,5,F,,,0,,,1,0,Yes
+"Packaged Water","Packaged Water",,PHW,,,,,Beverages,Beverages,20,veg,,5,F,,,0,,,1,0,Yes
+"Red Bull","Red Bull",,RB,,,,,Beverages,Beverages,125,veg,,5,F,,,0,,,1,0,Yes
+"Diet Coke","Diet Coke",,DC,,,,,Beverages,Beverages,70,veg,,5,F,,,0,,,1,0,Yes
+"Chicken Pulav","Chicken Pulav",,CP,,,,,"Bulk Party Order (Kg)","Bulk Party Order (Kg)",1000,non-veg,,5,F,,,0,,,1,0,Yes
+"Prawns Pulav","Prawns Pulav",,PP,,,,,"Bulk Party Order (Kg)","Bulk Party Order (Kg)",450,non-veg,,5,F,,,0,,,1,0,Yes
+"Mutton Pulav","Mutton Pulav",,MP,,,,,"Bulk Party Order (Kg)","Bulk Party Order (Kg)",1400,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Masla","Chicken Masla",,CMA,,,,,"Bulk Party Order (Kg)","Bulk Party Order (Kg)",900,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Sukka","Chicken Sukka",,CSU,,,,,"Bulk Party Order (Kg)","Bulk Party Order (Kg)",1000,non-veg,,5,F,,,0,,,1,0,Yes
+"Mutton Masala","Mutton Masala",,MUMA,,,,,"Bulk Party Order (Kg)","Bulk Party Order (Kg)",1000,non-veg,,5,F,,,0,,,1,0,Yes
+"Mutton Sukka","Mutton Sukka",,MS,,,,,"Bulk Party Order (Kg)","Bulk Party Order (Kg)",1200,non-veg,,5,F,,,0,,,1,0,Yes
+"Prawns Sukka","Prawns Sukka",,PS,,,,,"Bulk Party Order (Kg)","Bulk Party Order (Kg)",1200,non-veg,,5,F,,,0,,,1,0,Yes
+"Desi Chicken Masala","Desi Chicken Masala",,DCM,,,,,"Bulk Party Order (Kg)","Bulk Party Order (Kg)",1000,non-veg,,5,F,,,0,,,1,0,Yes
+"Desi Chicken Sukka","Desi Chicken Sukka",,DCS,,,,,"Bulk Party Order (Kg)","Bulk Party Order (Kg)",1200,non-veg,,5,F,,,0,,,1,0,Yes
+"Blenders Reserve","Blenders Reserve",,BLER,,,,,Whiskey,Whiskey,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",130,,0,"60 Ml",230,,0,"90 Ml",330,,0,"180 Ml",380,,0
+"Blenders Pride","Blenders Pride",,BP,,,,,Whiskey,Whiskey,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",105,,0,"60 Ml",195,,0,"90 Ml",280,,0,"180 Ml",380,,0
+Antiquity,Antiquity,,AN,8902967203468,,,,Whiskey,Whiskey,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",120,,0,"60 Ml",220,,0,"90 Ml",310,,0,"180 Ml",430,,0
+Signature,Signature,,SI,8902967200139,,,,Whiskey,Whiskey,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",110,,0,"60 Ml",200,,0,"90 Ml",270,,0,"180 Ml",380,,0
+"Signature Premium","Signature Premium",,SP,,,,,Whiskey,Whiskey,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",110,,0,"60 Ml",200,,0,"90 Ml",290,,0,"180 Ml",350,,0
+"Oak Smith Gold","Oak Smith Gold",,OSG,,,,,Whiskey,Whiskey,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",130,,0,"60 Ml",230,,0,"90 Ml",330,,0,"180 Ml",400,,0
+"Oak Smit Silver Internation","Oak Smit Silver Internation",,OSSI,8901488000631,,,,Whiskey,Whiskey,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",80,,0,"60 Ml",150,,0,"90 Ml",200,,0,"180 Ml",330,,0
+Royalstag,Royalstag,,RO,8901522002096,,,,Whiskey,Whiskey,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",80,,0,"60 Ml",140,,0,"90 Ml",140,,0,"180 Ml",250,,0
+"Royal Challenge","Royal Challenge",,RC,8902967200269,,,,Whiskey,Whiskey,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",100,,0,"60 Ml",170,,0,"90 Ml",240,,0,"180 Ml",250,,0
+Barrel,Barrel,,BA,89005453,,,,Whiskey,Whiskey,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",90,,0,"60 Ml",150,,0,"90 Ml",200,,0,"180 Ml",300,,0
+"Imperial Blue","Imperial Blue",,IB,8901522002102,,,,Whiskey,Whiskey,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",60,,0,"60 Ml",100,,0,"90 Ml",120,,0,"180 Ml",220,,0
+"Mc Dowell","Mc Dowell",,MD,8902967200597,,,,Whiskey,Whiskey,0,veg,,10,F,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",70,,0,"60 Ml",120,,0,"90 Ml",120,,0,"180 Ml",220,,0
+"Mc Dowell Luxury","Mc Dowell Luxury",,mcl,8902967210756,,,,Whiskey,Whiskey,0,veg,,10,F,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",60,,0,"60 Ml",100,,0,"90 Ml",150,,0,"180 Ml",230,,0
+"Dsp Black","Dsp Black",,DSP,,,,,Whiskey,Whiskey,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",70,,0,"60 Ml",110,,0,"90 Ml",110,,0,"180 Ml",220,,0
+"Black & White","Black & White",,BNW,,,,,Scotch,Scotch,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",190,,0,"60 Ml",350,,0,"90 Ml",515,,0,"180 Ml",730,,0
+Teachers,Teachers,,T,,,,,Scotch,Scotch,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",190,,0,"60 Ml",350,,0,"90 Ml",525,,0,"180 Ml",720,,0
+"Black Dog","Black Dog",,BD,,,,,Scotch,Scotch,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",190,,0,"60 Ml",350,,0,"90 Ml",500,,0,"180 Ml",850,,0
+"100 Pipers","100 Pipers",,P,,,,,Scotch,Scotch,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",160,,0,"60 Ml",320,,0,"90 Ml",440,,0,"180 Ml",850,,0
+"Vat 69","Vat 69",,V,,,,,Scotch,Scotch,0,veg,,15,F,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",185,,0,"60 Ml",330,,0,"90 Ml",490,,0,"180 Ml",940,,0
+"Black Dog Reserve","Black Dog Reserve",,BDR,,,,,Scotch,Scotch,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",200,,0,"60 Ml",350,,0,"90 Ml",530,,0,"180 Ml",1000,,0
+"Red Label","Red Label",,RL,,,,,Scotch,Scotch,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",250,,0,"60 Ml",450,,0,"90 Ml",540,,0,"180 Ml",650,,0
+"Black Label","Black Label",,BLL,,,,,Scotch,Scotch,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",270,,0,"60 Ml",530,,0,"90 Ml",750,,0,"180 Ml",1150,,0
+Ballantines,Ballantines,,BALL,,,,,Scotch,Scotch,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",200,,0,"60 Ml",330,,0,"90 Ml",480,,0,"180 Ml",680,,0
+"Chivas Regal","Chivas Regal",,CR,,,,,Scotch,Scotch,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",350,,0,"60 Ml",600,,0,"90 Ml",900,,0,"180 Ml",1750,,0
+Absolute,Absolute,,A,,,,,Vodka,Vodka,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",130,,0,"60 Ml",320,,0,"90 Ml",450,,0,"180 Ml",750,,0
+Smirnoff,Smirnoff,,S,,,,,Vodka,Vodka,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",130,,0,"60 Ml",200,,0,"90 Ml",300,,0,"180 Ml",425,,0
+"Smirnoff Apple","Smirnoff Apple",,SA,,,,,Vodka,Vodka,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",120,,0,"60 Ml",220,,0,"90 Ml",300,,0,"180 Ml",440,,0
+"Magic Moment Apple","Magic Moment Apple",,MMA,,,,,Vodka,Vodka,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",80,,0,"60 Ml",130,,0,"90 Ml",185,,0,"180 Ml",280,,0
+"Magic Moment","Magic Moment",,MM,,,,,Vodka,Vodka,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",70,,0,"60 Ml",120,,0,"90 Ml",170,,0,"180 Ml",280,,0
+Romanov,Romanov,,R,,,,,Vodka,Vodka,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",70,,0,"60 Ml",120,,0,"90 Ml",0,,0,"180 Ml",220,,0
+"Romanov Apple","Romanov Apple",,RA,,,,,Vodka,Vodka,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",70,,0,"60 Ml",120,,0,"90 Ml",160,,0,"180 Ml",220,,0
+"White Mischeif","White Mischeif",,WM,8902967600038,,,,Vodka,Vodka,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",80,,0,"60 Ml",130,,0,"90 Ml",170,,0,"180 Ml",280,,0
+"Macdowell Rum","Macdowell Rum",,MR,8902967400027,,,,Rum,Rum,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",90,,0,"60 Ml",130,,0,"90 Ml",150,,0,"180 Ml",205,,0
+"Bacardi Rum","Bacardi Rum",,BRU,,,,,Rum,Rum,0,veg,,15,F,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",120,,0,"60 Ml",220,,0,"90 Ml",290,,0,"180 Ml",440,,0
+"Bacardi Limon","Bacardi Limon",,BL,,,,,Rum,Rum,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",90,,0,"60 Ml",130,,0,"90 Ml",160,,0,"180 Ml",440,,0
+"Old Monk","Old Monk",,OM,,,,,Rum,Rum,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",90,,0,"60 Ml",130,,0,"90 Ml",160,,0,"180 Ml",215,,0
+"Captain Morgan","Captain Morgan",,CMO,,,,,Rum,Rum,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",90,,0,"60 Ml",130,,0,"90 Ml",150,,0,"180 Ml",260,,0
+"Bacardi Black Rum","Bacardi Black Rum",,BBR,8902136606038,,,,Rum,Rum,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",90,,0,"60 Ml",130,,0,"90 Ml",160,,0,"180 Ml",250,,0
+"Dr Brandy","Dr Brandy",,DB,6024017308540,,,,Rum,Rum,0,veg,,10,F,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",60,,0,"60 Ml",110,,0,"90 Ml",150,,0,"180 Ml",205,,0
+Honeybee,Honeybee,,HB,,,,,Rum,Rum,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",70,,0,"60 Ml",120,,0,"90 Ml",170,,0,"180 Ml",150,,0
+"Bombay Saphire","Bombay Saphire",,BSA,,,,,Gin,Gin,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",190,,0,"60 Ml",370,,0,"90 Ml",540,,0,"180 Ml",1020,,0
+"Greater Than","Greater Than",,GT,,,,,Gin,Gin,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",120,,0,"60 Ml",200,,0,"90 Ml",280,,0,"180 Ml",550,,0
+"Blue Riband","Blue Riband",,BR,8902967500024,,,,Gin,Gin,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",70,,0,"60 Ml",110,,0,"90 Ml",200,,0,"180 Ml",220,,0
+"Budwiser Mild","Budwiser Mild",,BM,,,,,Beer,Beer,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"330 Ml",170,,0,"650 Ml",245,,0
+"Budwiser Strong","Budwiser Strong",,bus,,,,,Beer,Beer,0,veg,,10,F,,,0,,,1,0,Yes,,,,,Quantity,"330 Ml",260,,0,"650 Ml",250,,0,"500 ML",200,,0
+"Bira White","Bira White",,BW,,,,,Beer,Beer,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"330 Ml",150,,0,"650 Ml",250,,0,"500 ML",210,,0
+"Becks Ice","Becks Ice",,BI,,,,,Beer,Beer,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"330 Ml",190,,0,"650 Ml",310,,0
+Heineken,Heineken,,H,,,,,Beer,Beer,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"650 Ml",230,,0,"500 ML",180,,0
+"Lp Outr Of Stock","Lp Outr Of Stock",,LS,,,,,Beer,Beer,0,veg,,10,F,,,0,,,1,0,Yes,,,,,Quantity,"650 Ml",260,,0,"500 ML",240,,0
+"Lp Mild","Lp Mild",,LM,,,,,Beer,Beer,140,veg,,10,F,,,0,,,1,0,Yes
+"Kingfisher Ultra","Kingfisher Ultra",,KU,,,,,Beer,Beer,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"330 Ml",145,,0,"650 Ml",220,,0
+"Kingfisher Strong","Kingfisher Strong",,KS,8905002001005,,,,Beer,Beer,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"330 Ml",120,,0,"650 Ml",195,,0,"500 ML",150,,0
+"Kingfisher Mid","Kingfisher Mid",,KM,,,,,Beer,Beer,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"330 Ml",130,,0,"650 Ml",200,,0
+"Tuborg Strong","Tuborg Strong",,TS,,,,,Beer,Beer,0,other,,,,,,0,,,1,0,Yes,,,,,Size,"500 ML",150,,0,"650 Ml",195,,0,"330 Ml",110,,0
+"Tuborg Mild","Tuborg Mild",,TM,,,,,Beer,Beer,200,other,,,,,,0,,,1,0,Yes
+"Calsberg Mild","Calsberg Mild",,CM,,,,,Beer,Beer,240,veg,,10,F,,,0,,,1,0,Yes
+"Calsberg Strong","Calsberg Strong",,CS,,,,,Beer,Beer,250,other,,,,,,0,,,1,0,Yes
+Corona,Corona,,C,,,,,Beer,Beer,0,other,,,,,,0,,,1,0,Yes,,,,,Quantity,"330 Ml",200,,0
+"Port Wine 1000","Port Wine 1000",,PW,,,,,"Port Wine","Port Wine",0,other,,,,,,0,,,1,0,Yes,,,,,Portion,Half,175,,0,Full,285,,0,"180 Ml",98,,0
+"Sula Red","Sula Red",,SR,,,,,"Port Wine","Port Wine",0,other,,,,,,0,,,1,0,Yes,,,,,Portion,"Full Bottle",950,,0,"Half Bottle",540,,0
+"Sula White","Sula White",,SW,,,,,"Port Wine","Port Wine",0,other,,,,,,0,,,1,0,Yes,,,,,Portion,"Full Bottle",750,,0,"Half Bottle",410,,0
+Breezer,Breezer,,B,,,,,Beer,Beer,150,veg,,10,F,,,0,,,1,0,Yes
+Hoegaarden,Hoegaarden,,Hg,,,,,Beer,Beer,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"330 Ml",200,,0,"650 Ml",300,,0
+"Tonic Water","Tonic Water",,Tw,,,,,Beverages,Beverages,50,veg,,5,F,,,0,,,1,0,Yes
+"Veg Pakoda.","Veg Pakoda.",,vpa,,,,,Extra,Extra,100,veg,,5,F,,,0,,,1,0,Yes
+"Crab Jumbo Masala","Crab Jumbo Masala",,cjm,,,,,"Konkan Swad Special Crabs","Konkan Swad Special Crabs",1000,veg,,5,F,,,0,,,1,0,Yes
+"Fresh Lime Soda","Fresh Lime Soda",,Fls,,,,,Beverages,Beverages,80,veg,,5,F,,,0,,,1,0,Yes
+"Pkaged Water 500 Ml","Pkaged Water 500 Ml",,Pw5,,,,,Beverages,Beverages,10,veg,,5,F,,,0,,,1,0,Yes
+"Cheese Pakoda","Cheese Pakoda",,Cpa,,,,,Extra,Extra,120,veg,,5,F,,,0,,,1,0,Yes
+"Virjin Mojito","Virjin Mojito",,Vm,,,,,Moktails,Moktails,140,veg,,5,F,,,0,,,1,0,Yes
+"Officers Choice","Officers Choice",,Oc,8901544011144,,,,Whiskey,Whiskey,220,veg,,10,F,,,0,,,1,0,Yes
+"Blueberry Mojito","Blueberry Mojito",,Bmo,,,,,Moktails,Moktails,140,veg,,,,,,0,,,1,0,Yes
+"Watermelon Mojito","Watermelon Mojito",,Wmj,,,,,Moktails,Moktails,140,veg,,5,F,,,0,,,1,0,Yes
+"Lemon Ice Tea","Lemon Ice Tea",,Lit,,,,,Moktails,Moktails,120,veg,,,,,,0,,,1,0,Yes
+"Peach Ice Ea","Peach Ice Ea",,Pit,,,,,Moktails,Moktails,120,veg,,,,,,0,,,1,0,Yes
+"Guava Mary","Guava Mary",,Gmm,,,,,Moktails,Moktails,150,veg,,5,F,,,0,,,1,0,Yes
+"Blue Moon","Blue Moon",,Bmm,,,,,Moktails,Moktails,140,veg,,5,F,,,0,,,1,0,Yes
+Extra,Extra,,Ex,,,,,Extra,Extra,0,veg,,5,F,,,0,,,1,0,Yes
+Bagpiper,Bagpiper,,Bpw,8902967212873,,,,Whiskey,Whiskey,120,veg,,,,,,0,,,1,0,Yes
+"Chana Garlic Fry","Chana Garlic Fry",,Cgf,,,,,Extra,Extra,160,veg,,5,F,,,0,,,1,0,Yes
+"Omlet Sandwich","Omlet Sandwich",,Os,,,,,Extra,Extra,90,veg,,,,,,0,,,1,0,Yes
+"Egg Tawa Fry","Egg Tawa Fry",,Etf,,,,,Extra,Extra,90,veg,,5,F,,,0,,,1,0,Yes
+"Chana Garlic Koliwada","Chana Garlic Koliwada",,"chana garlic koliwad",,,,,Extra,Extra,180,veg,,5,F,,,0,,,1,0,Yes
+"Bangda Thali","Bangda Thali",,bt,,,,,"Konkan Swad Special Thali (Thalis Available Only For Dine In)","Konkan Swad Special Thali (Thalis Available Only For Dine In)",280,veg,,5,F,,,0,,,1,0,Yes
+"Bombil Thali","Bombil Thali",,Btt,,,,,"Konkan Swad Special Thali (Thalis Available Only For Dine In)","Konkan Swad Special Thali (Thalis Available Only For Dine In)",320,veg,,5,F,,,0,,,1,0,Yes
+"Royal Challenge 750 Ml","Royal Challenge 750 Ml",,"Rc 750",,,,,Whiskey,Whiskey,1070,veg,,,,,,0,,,1,0,Yes
+"Mcd No 1 750ml","Mcd No 1 750ml",,Mcd750,,,,,Whiskey,Whiskey,900,veg,,10,F,,,0,,,1,0,Yes
+"I B 750ml","I B 750ml",,"Ib 750",,,,,Whiskey,Whiskey,880,veg,,,,,,0,,,1,0,Yes
+"Dsp Sada","Dsp Sada",,"DSP sada",,,,,Whiskey,Whiskey,135,veg,,,,,,0,,,1,0,Yes
+"Chicken Lollypop Half","Chicken Lollypop Half",,ClH,,,,,"Non Veg Chinese Starters","Non Veg Chinese Starters",120,veg,,5,F,,,0,,,1,0,Yes
+Juice,Juice,,ju,,,,,Beverages,Beverages,50,veg,,,,,,0,,,1,0,Yes
+"Prawns Butter Garlic(12pc)","prawns butter garlic(12pc)",,abcd,,,,,"Non Veg Chinese Starters","Non Veg Chinese Starters",450,non-veg,,5,F,,,0,,,1,0,Yes
+"Butter Chapathi","Butter Chapathi",,BC,,,,,Extra,Extra,25,veg,,5,F,,,0,,,1,0,Yes
+"Potta Fry","Potta Fry",,Pf.,,,,,Extra,Extra,200,veg,,5,F,,,0,,,1,0,Yes
+"Dr Brandy Res","Dr Brandy Res",,DBR,,,,,Rum,Rum,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",85,,0,"60 Ml",165,,0,"90 Ml",240,,0,"180 Ml",500,,0
+"Dsp Black 750ml","Dsp Black 750ml",,"DSP B",,,,,Whiskey,Whiskey,860,veg,,,,,,0,,,1,0,Yes
+"Chicken Satey","Chicken Satey",,"satay chi",,,,,"Non Veg Chinese Starters","Non Veg Chinese Starters",310,non-veg,,5,F,,,0,,,1,0,Yes
+"Royal Stag 750ml","Royal Stag 750ml",,RS750,,,,,Whiskey,Whiskey,1070,veg,,,,,,0,,,1,0,Yes
+"Dsp 750 Ml","Dsp 750 Ml",,"Dsp 750",,,,,Whiskey,Whiskey,560,veg,,,,,,0,,,1,0,Yes
+"Finger Chips","Finger Chips",,FC,,,,,Extra,Extra,140,veg,,5,F,,,0,,,1,0,Yes
+"Caramel Custard","Caramel Custard",,Ccu,,,,,Extra,Extra,80,veg,,5,F,,,0,,,1,0,Yes
+"Signature 750ml","Signature 750ml",,"Signature 750ml",,,,,Whiskey,Whiskey,1500,veg,,,,,,0,,,1,0,Yes
+"Black Dog 750 Ml","Black Dog 750 Ml",,"Bd 750ml",,,,,Scotch,Scotch,3400,veg,,,,,,0,,,1,0,Yes
+"Blenders Pride 750","Blenders Pride 750",,BP750ML,,,,,Whiskey,Whiskey,1500,veg,,,,,,0,,,1,0,Yes
+"Barrel 750 Ml","Barrel 750 Ml",,"br 750ml",,,,,Whiskey,Whiskey,960,veg,,10,F,,,0,,,1,0,Yes
+"Kokam Sharbat","Kokam Sharbat",,KSS,,,,,Moktails,Moktails,50,veg,,5,F,,,0,,,1,0,Yes
+"Paneer Handi","Paneer Handi",,PH,,,,,"Veg Main Course","Veg Main Course",190,veg,,5,F,,,0,,,1,0,Yes
+"Mcd Rum 750ml","Mcd Rum 750ml",,"Mcd Rum 750ml",,,,,Rum,Rum,840,veg,,10,F,,,0,,,1,0,Yes
+"Old Monk 1000ml","Old Monk 1000ml",,"OM 1000 ML",,,,,Rum,Rum,700,veg,,,,,,0,,,1,0,Yes
+"Magic Apple 750ml","Magic Apple 750ml",,"MM 750ML",,,,,Vodka,Vodka,1120,veg,,,,,,0,,,1,0,Yes
+"Egg Schezwan Fried Rice","Egg Schezwan Fried Rice",,Esfr,,,,,"Non - Veg Chinese Main Course","Non - Veg Chinese Main Course",220,egg,,5,F,,,0,,,1,0,Yes
+"Kingfisher Strong Can 330ml","Kingfisher Strong Can 330ml",,"Ksc 330ml",,,,,Beer,Beer,110,veg,,,,,,0,,,1,0,Yes
+"Sterling Reserve B7 180ml","Sterling Reserve B7 180ml",,"SrB7 180ML",,,,,Whiskey,Whiskey,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",60,,0,"60 Ml",100,,0,"90 Ml",150,,0,"180 Ml",260,,0
+"Smirnoff 750ml","Smirnoff 750ml",,"SM 750ML",,,,,Vodka,Vodka,1560,veg,,,,,,0,,,1,0,Yes
+"Konkan Swad Special Non Veg Thali","Konkan Swad Special Non Veg Thali",,"kS nonveg thali",,,,,"Konkan Swad Special Thali (Thalis Available Only For Dine In)","Konkan Swad Special Thali (Thalis Available Only For Dine In)",500,non-veg,,5,F,,,0,,,1,0,Yes
+"Old Monk 750ml","Old Monk 750ml",,"OM 750ML",,,,,Rum,Rum,880,veg,,,,,,0,,,1,0,Yes
+"Oaksmith Gold 750ml","Oaksmith Gold 750ml",,OG750ML,,,,,Whiskey,Whiskey,1600,veg,,,,,,0,,,1,0,Yes
+"Veg Kolhapuri","Veg Kolhapuri",,VKP,,,,,"Veg Main Course","Veg Main Course",250,veg,,5,F,,,0,,,1,0,Yes
+"Palak Paneer","Palak Paneer",,PPN,,,,,"Veg Main Course","Veg Main Course",180,veg,,5,F,,,0,,,1,0,Yes
+"Tiger Prawns 7pc","Tiger Prawns 7pc",,TP,,,,,"Gomantaks Special Fry","Special Fry",700,non-veg,,,,,,0,,,1,0,Yes
+"Fish Biryani","Fish Biryani",,FB,,,,,"Rice Dishes","Rice Dishes",350,veg,,,,,,0,,,1,0,Yes
+"Red Label 750ml","Red Label 750ml",,"RL 750ML",,,,,Scotch,Scotch,2400,veg,,,,,,0,,,1,0,Yes
+"Black Lable 750ml","Black Lable 750ml",,"BL 750ML",,,,,Scotch,Scotch,4200,veg,,,,,,0,,,1,0,Yes
+"Prawns Triple Sez Rice","Prawns Triple Sez Rice",,PTSR,,,,,"Rice Dishes","Rice Dishes",250,veg,,5,F,,,0,,,1,0,Yes
+"Butter Milk","Butter Milk",,Btm,,,,,Extra,Extra,15,veg,,5,F,,,0,,,1,0,Yes
+"Bacardi Rum 750ml","Bacardi Rum 750ml",,Br750ml,,,,,Rum,Rum,1500,veg,,,,,,0,,,1,0,Yes
+"Black & White 750ml","Black & White 750ml",,"Black & white 750ml",,,,,Scotch,Scotch,2900,veg,,,,,,0,,,1,0,Yes
+"Konkan Swad Special Seafood Thali","Konkan Swad Special Seafood Thali",,KSSSTH,,,,,"Konkan Swad Special Thali (Thalis Available Only For Dine In)","Konkan Swad Special Thali (Thalis Available Only For Dine In)",550,veg,,2.5,F,,,0,,,1,0,Yes
+"Ballentine 750ml","Ballentine 750ml",,"Bal 750ml",,,,,Scotch,Scotch,2400,veg,,,,,,0,,,1,0,Yes
+"Antiquity Blue 750 Ml","Antiquity Blue 750 Ml",,"Ab 750ml",,,,,Whiskey,Whiskey,1600,veg,,,,,,0,,,1,0,Yes
+"Coconut Chetney","Coconut Chetney",,COC,,,,,Extra,Extra,30,veg,,,,,,0,,,1,0,Yes
+"Sukha Bhaji","Sukha Bhaji",,Sb,,,,,Extra,Extra,80,veg,,5,F,,,0,,,1,0,Yes
+"Teachers 750ml","Teachers 750ml",,"Teachers 750 ml",,,,,Scotch,Scotch,2700,veg,,,,,,0,,,1,0,Yes
+"King Prawns Masala","King Prawns Masala",,"king prawns masala",,,,,"Konkan Special Items","Konkan Special Items",0,non-veg,services,,,,,0,,,1,0,Yes
+"Prawns Masala King","Prawns Masala King",,pmk,,,,,"Konkan Swad Special Fish","Konkan Swad Special Fish",500,veg,,,,,,0,,,1,0,Yes
+"Prawns Biryani 1kg","Prawns Biryani 1kg",,"PB 1 Kg",,,,,"Rice Dishes","Rice Dishes",1400,non-veg,,,,,,0,,,1,0,Yes
+"Special Sukka Bhaji","Special Sukka Bhaji",,"special sukka bhaji",,,,,"Veg Main Course","Veg Main Course",100,veg,services,5,F,,,0,,,1,0,Yes
+Usal,Usal,,usal,,,,,"Veg Main Course","Veg Main Course",100,veg,services,5,F,,,0,,,1,0,Yes
+Dal,Dal,,dal,,,,,"Veg Main Course","Veg Main Course",75,veg,services,,,,,0,,,1,0,Yes
+Rabadi,Rabadi,,Rabadi,,,,,Extra,Extra,120,veg,,5,F,,,0,,,1,0,Yes
+"Chicken Liver Masala Fry","Chicken Liver Masala Fry",,Clmf,,,,,"Non-Veg Main Course","Non-Veg Main Course",300,non-veg,,5,F,,,0,,,1,0,Yes
+"Veg Burnt Garlic Fried Rice","Veg Burnt Garlic Fried Rice",,vbgr,,,,,"Veg Chinese Main Course","Veg Chinese Main Course",240,veg,,5,F,,,0,,,1,0,Yes
+"Mutton Roast Fry","Mutton Roast Fry",,mrf,,,,,"Gomantaks Special Fry","Special Fry",300,non-veg,,5,F,,,0,,,1,0,Yes
+"Prawns Big","Prawns Big",,PRB,,,,,Extra,Extra,800,non-veg,,,,,,0,,,1,0,Yes
+"Absolute 750ml","Absolute 750ml",,"Absolute 750ml",,,,,Vodka,Vodka,2400,veg,,,,,,0,,,1,0,Yes
+"Copter Strong","Copter Strong",,COS,,,,,Beer,Beer,210,veg,,,,,,0,,,1,0,Yes
+"Hywards 2000 Strong","Hywards 2000 Strong",,Hys,,,,,Beer,Beer,150,veg,,,,,,0,,,1,0,Yes
+"Bacardi Black 750ml","Bacardi Black 750ml",,"BB 750ML",,,,,Rum,Rum,1020,veg,,,,,,0,,,1,0,Yes
+"Fresh Lime Water","Fresh Lime Water",,FLW,,,,,Extra,Extra,40,veg,,5,F,,,0,,,1,0,Yes
+"Romanov Apple 750ml","Romanov Apple 750ml",,"ROMA 750ML",,,,,Vodka,Vodka,880,veg,,10,F,,,0,,,1,0,Yes
+"Gulab Jamun","Gulab Jamun",,GJ,,,,,Extra,Extra,80,veg,,5,F,,,0,,,1,0,Yes
+"Blender Reserve 750ml","Blender Reserve 750ml",,"Blender Reserve 750m",,,,,Whiskey,Whiskey,1600,veg,,10,F,,,0,,,1,0,Yes
+"Chcken Biryani 1kg","Chcken Biryani 1kg",,CB1KG,,,,,"Bulk Party Order (Kg)","Bulk Party Order (Kg)",1000,veg,,5,F,,,0,,,1,0,Yes
+"Magic Moment 750ml","Magic Moment 750ml",,MM750ML,,,,,Vodka,Vodka,1120,veg,,,,,,0,,,1,0,Yes
+"Smirnoff Apple 750ml","Smirnoff Apple 750ml",,"Smirnoff apple 750ml",,,,,Vodka,Vodka,1610,veg,,,,,,0,,,1,0,Yes
+"Mutton Gravy","Mutton Gravy",,MG,,,,,Extra,Extra,100,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Gravy.","Chicken Gravy.",,"Chicken Gravy",,,,,Extra,Extra,80,non-veg,,5,F,,,0,,,1,0,Yes
+"Bacardi Lemon 750ml","Bacardi Lemon 750ml",,"Bacardi lemon 750ml",,,,,Rum,Rum,1610,veg,,,,,,0,,,1,0,Yes
+"White Mischife 750ml","White Mischife 750ml",,"White Mischife 750ml",,,,,Vodka,Vodka,1120,veg,,,,,,0,,,1,0,Yes
+"Singapore Rice","Singapore Rice",,"singapore rice",,,,,"Veg Chinese Main Course","Veg Chinese Main Course",240,veg,,5,F,,,0,,,1,0,Yes
+"Soya Chilly","Soya Chilly",,soya,,,,,"Veg Chinese Starters","Veg Chinese Starters",250,veg,services,,,,,0,,,1,0,Yes
+"Red Label 200ml","Red Label 200ml",,RL200ML,,,,,Scotch,Scotch,650,veg,,,,,,0,,,1,0,Yes
+"Mcd Luxury 750ml","Mcd Luxury 750ml",,MCDLUXURY750ML,,,,,Whiskey,Whiskey,680,veg,,10,F,,,0,,,1,0,Yes
+"Oken Glow 180ml","Oken Glow 180ml",,"Oaken Glow 180ml",,,,,Whiskey,Whiskey,300,veg,,,,,,0,,,1,0,Yes
+"Egg Hakka Noodles","Egg Hakka Noodles",,ehn,,,,,"Non - Veg Chinese Main Course","Non - Veg Chinese Main Course",180,egg,,5,F,,,0,,,1,0,Yes
+"Oksmith Silver 750ml","Oksmith Silver 750ml",,"Oaksmith silver 750m",,,,,Whiskey,Whiskey,1370,veg,,,,,,0,,,1,0,Yes
+"Amstel Strong","Amstel Strong",,AMS,AS,,,,Beer,Beer,250,veg,,10,F,,,0,,,1,0,Yes
+"Bud Mild 500","Bud Mild 500",,BM500,,,,,Beer,Beer,190,veg,,,,,,0,,,1,0,Yes
+"Oken Glow","Oken Glow",,OKG,OG,,,,Whiskey,Whiskey,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",120,,0,"60 Ml",220,,0,"90 Ml",330,,0,"180 Ml",600,,0
+"Powa Dosa","Powa Dosa",,PWD,P,,,,"Konkan Special Items","Konkan Special Items",35,veg,,5,F,,,0,,,1,0,Yes
+"Tuborg Mild Can 500","Tuborg Mild Can 500",,TMC,,,,,Beer,Beer,140,veg,,,,,,0,,,1,0,Yes
+"Sula White Full","Sula White Full",,swf,,,,,"Port Wine","Port Wine",750,veg,,,,,,0,,,1,0,Yes
+C7,C7,,C7,,,,,Beer,Beer,0,veg,,,,,,0,,,1,0,Yes
+"Sterling B7 750ml","Sterling B7 750ml",,b7,,,,,Whiskey,Whiskey,720,veg,,,,,,0,,,1,0,Yes
+"Blue Riband 750ml","Blue Riband 750ml",,br750,,,,,Gin,Gin,600,veg,,10,F,,,0,,,1,0,Yes
+"Soft Drinks 250ml","Soft Drinks 250ml",,sd250,,,,,Extra,Extra,20,veg,services,5,F,,,0,,,1,0,Yes
+"Squid Koliwada","Squid Koliwada",,sqk,,,,,"Konkan Swad Special Fish","Konkan Swad Special Fish",430,non-veg,,5,F,,,0,,,1,0,Yes
+"Sterling B7 1000ml","Sterling B7 1000ml",,sb1000ml,,,,,Whiskey,Whiskey,930,veg,,,,,,0,,,1,0,Yes
+Lep,Lep,,lp,,,,,"Konkan Swad Special Fish","Konkan Swad Special Fish",0,non-veg,,5,F,,,0,,,1,0,Yes
+"Stuffed Bombil","Stuffed Bombil",,SFB,,,,,"Gomantaks Special Fry","Special Fry",450,non-veg,,5,F,,,0,,,1,0,Yes
+"Heiniken 500ml","Heiniken 500ml",,hei500,,,,,Beer,Beer,180,veg,,,,,,0,,,1,0,Yes
+"Corn Solted Paper","Corn Solted Paper",,csp,,,,,"Veg Chinese Main Course","Veg Chinese Main Course",200,veg,,5,F,,,0,,,1,0,Yes
+"Salt And Papper Corn","Salt And Papper Corn",,spc,sc,,,,Extra,Extra,200,veg,,5,F,,,0,,,1,0,Yes
+"Veg Manchhow Soup","Veg Manchhow Soup",,vms,,,,,"Chinese Soups","Chinese Soups",160,veg,,5,F,,,0,,,1,0,Yes
+"Chicken Biryani Boneless 1kg","Chicken Biryani Boneless 1kg",,"CBB 1KG",,,,,"Rice Dishes","Rice Dishes",1200,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Butter Tawa","Chicken Butter Tawa",,CBT,,,,,"Konkan Special Items","Konkan Special Items",350,non-veg,,5,F,,,0,,,1,0,Yes
+"Rock Ford","Rock Ford",,rfo,,,,,Whiskey,Whiskey,370,veg,,10,F,,,0,,,1,0,Yes
+"Surmai Cutlet","Surmai Cutlet",,SCU,,,,,Extra,Extra,250,non-veg,,5,F,,,0,,,1,0,Yes
+"Surmai Tawa Fry 1pc","Surmai Tawa Fry 1pc",,STF1PC,,,,,Extra,Extra,230,non-veg,,5,F,,,0,,,1,0,Yes
+"Shiraz Rose Wine","Shiraz Rose Wine",,SRW,,,,,"Port Wine","Port Wine",750,veg,,,,,,0,,,1,0,Yes
+"Sidus Port Wine","Sidus Port Wine",,SPW,,,,,"Port Wine","Port Wine",0,veg,,,,,,0,,,1,0,Yes,,,,,Portion,Half,150,,0,Full,360,,0
+"Romanov 750ml","Romanov 750ml",,"Rmn 750ml",,,,,Vodka,Vodka,880,veg,,10,F,,,0,,,1,0,Yes
+"Classic Red Wine","Classic Red Wine",,crw,,,,,"Port Wine","Port Wine",0,veg,,,,,,0,,,1,0,Yes,,,,,Portion,Half,650,,0,Full,1200,,0
+"Bira Rise","Bira Rise",,BIR,,,,,Beer,Beer,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"650 Ml",230,,0,"500 ML",185,,0
+"American Pride","American Pride",,AMP,,,,,Whiskey,Whiskey,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",1,,0,"60 Ml",2,,0,"90 Ml",3,,0,"180 Ml",300,,0
+"Dsp Black 1 Lt","Dsp Black 1 Lt",,"Dsp 1lt",,,,,Whiskey,Whiskey,710,veg,,,,,,0,,,1,0,Yes
+"Rock Ford Classic","Rock Ford Classic",,rfc,rf,,,,Whiskey,Whiskey,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",105,,0,"60 Ml",195,,0,"90 Ml",280,,0,"180 Ml",550,,0
+"American Nuts Kulfi","American Nuts Kulfi",KULFI,ANK,,,,,Extra,Extra,75,veg,,5,F,,,0,,,1,0,Yes
+"Shahi Gulab Kulfi","Shahi Gulab Kulfi",KULFI,SGK,,,,,Extra,Extra,75,veg,,5,F,,,0,,,1,0,Yes
+"Chandrakala Kulfi","Chandrakala Kulfi",KULFI,CKK,,,,,Extra,Extra,75,veg,,5,F,,,0,,,1,0,Yes
+"Kesar Pista Kulfi","Kesar Pista Kulfi",KULFI,KPK,,,,,Extra,Extra,75,veg,,5,F,,,0,,,1,0,Yes
+"Royal Stag 2 Litres","Royal Stag 2 Litres",,RS2,,,,,Whiskey,Whiskey,1850,veg,,,,,,0,,,1,0,Yes
+"Appy Fizz 600ml","Appy Fizz 600ml",,AF,,,,,Beverages,Beverages,35,veg,,,,,,0,,,1,0,Yes
+"Johnnie Walker Blonde 180ml","Johnnie Walker Blonde 180ml",,JWB,,,,,Whiskey,Whiskey,1400,veg,,,,,,0,,,1,0,Yes
+Legacy,Legacy,,LGC,,,,,Whiskey,Whiskey,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",105,,0,"60 Ml",195,,0,"90 Ml",280,,0,"180 Ml",550,,0
+"Magic Moments Cranberry","Magic Moments Cranberry",,MMV,,,,,Vodka,Vodka,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",1,,0,"60 Ml",2,,0,"90 Ml",3,,0,"180 Ml",525,,0
+"M/m Cranvery","M/m Cranvery",,mmc,,,,,Vodka,Vodka,325,veg,,,,,,0,,,1,0,Yes
+"Chevas Regal 750ml","Chevas Regal 750ml",,"CVR 750ml",,,,,Scotch,Scotch,3850,veg,,,,,,0,,,1,0,Yes
+"Clasic Red Halp","Clasic Red Halp",,crh,,,,,"Port Wine","Port Wine",330,veg,,,,,,0,,,1,0,Yes
+"American Pride 180ml","American Pride 180ml",,PRIDE,,,,,Whiskey,Whiskey,300,veg,,,,,,0,,,1,0,Yes
+"Royal Green","Royal Green",,RG,,,,,Whiskey,Whiskey,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",110,,0,"60 Ml",160,,0,"90 Ml",190,,0,"180 Ml",200,,0
+"Clasic Red Wine 750ml","Clasic Red Wine 750ml",,wrc,,,crw,,"Port Wine","Port Wine",625,veg,,,,,,0,,,1,0,Yes
+"Green Peas Butter Garlic","Green Peas Butter Garlic",,gpb,gbg,,gpb,,Extra,Extra,100,veg,,5,F,,,0,,,1,0,Yes
+"William Lowson 180ml","William Lowson 180ml",,wl,,,,,Scotch,Scotch,450,veg,,,,,,0,,,1,0,Yes
+"Consilium Black","Consilium Black",,CBW,,,,,Whiskey,Whiskey,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",1,,0,"60 Ml",2,,0,"90 Ml",3,,0,"180 Ml",900,,0
+"Consilium Black Cigar","Consilium Black Cigar",,CBC,,,,,Whiskey,Whiskey,1050,veg,,,,,,0,,,1,0,Yes
+Legacy.,Legacy.,,Lac,,,,,Whiskey,Whiskey,350,veg,,,,,,0,,,1,0,Yes
+"Magic Moments Lemon","Magic Moments Lemon",,MML,,,,,Vodka,Vodka,0,veg,,,,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",1,,0,"60 Ml",2,,0,"90 Ml",3,,0,"180 Ml",525,,0
+"Plain Dal","Plain Dal",,PD,,,,,Extra,Extra,100,veg,,5,F,,,0,,,1,0,Yes
+Usal.,Usal.,,Ul,,,,,Extra,Extra,100,veg,,5,F,,,0,,,1,0,Yes
+"Kingfisher Ultra Max","Kingfisher Ultra Max",,KUM,,,,,Beer,Beer,240,veg,,,,,,0,,,1,0,Yes
+"Paneer Butter Tawa","Paneer Butter Tawa",,btw,,,,,"Veg Chinese Starters","Veg Chinese Starters",280,veg,,5,F,,,0,,,1,0,Yes
+"Consilium Black Rye","Consilium Black Rye",,cobr,,,,,Scotch,Scotch,1800,veg,,,,,,0,,,1,0,Yes
+"American Pride 750ml","American Pride 750ml",,Amp750,,,,,Whiskey,Whiskey,1170,veg,,,,,,0,,,1,0,Yes
+"Honeybee 180ml","Honeybee 180ml",,ho180,,,,,Whiskey,Whiskey,270,veg,,,,,,0,,,1,0,Yes
+"B/pride 2ltr","B/pride 2ltr",,BP2,,,,,Whiskey,Whiskey,3500,veg,,,,,,0,,,1,0,Yes
+"Strawberry Mojito","Strawberry Mojito",,sm,,,,,Moktails,Moktails,120,veg,,,,,,0,,,1,0,Yes
+"Bombay Sapphire","Bombay Sapphire",,BOS,,,,,Gin,Gin,2800,veg,,,,,,0,,,1,0,Yes
+"100 Pipers 750ml","100 Pipers 750ml",,100p,,,,,Scotch,Scotch,2600,veg,,,,,,0,,,1,0,Yes
+"Sterling B7 Res 750ml","Sterling B7 Res 750ml",,srb7,,,,,Whiskey,Whiskey,760,veg,,,,,,0,,,1,0,Yes
+"Bombay Sapphire 750ml","Bombay Sapphire 750ml",,Bosp,,,,,Rum,Rum,2800,veg,,,,,,0,,,1,0,Yes
+"Black Label.","Black Label.",,"BL 200ML",,,,,Scotch,Scotch,1150,veg,,,,,,0,,,1,0,Yes
+"Satori Red Halp 375ml","Satori Red Halp 375ml",,srh,,,,,"Port Wine","Port Wine",430,veg,,10,F,,,0,,,1,0,Yes
+"Halwa Fry","Halwa Fry",,HF,,,,,"Gomantaks Special Fry","Special Fry",320,veg,,5,F,,,0,,,1,0,Yes
+Icecream,Icecream,,Icecream,,,,,Extra,Extra,100,veg,,,,,,0,,,1,0,Yes
+Icecream,Icecream,,Icecream,,,,,Extra,Extra,100,veg,,5,F,,,0,,,1,0,Yes
+"Boiled Sheng","Boiled Sheng",,bsh,,,,,Extra,Extra,30,veg,,5,F,,,0,,,1,0,Yes
+"Satoni Wine","Satoni Wine",,saw,,,,,"Port Wine","Port Wine",430,veg,,10,F,,,0,,,1,0,Yes
+"R/c Strong 650ml","R/c Strong 650ml",,rs6,,,,,Beer,Beer,160,veg,,10,F,,,0,,,1,0,Yes
+"Royal Challenge Strong","Royal Challenge Strong",,"R C Strong",,,,,Beer,Beer,160,veg,,10,F,,,0,,,1,0,Yes
+"Royal Challenge Mild","Royal Challenge Mild",,"R C Mild",,,,,Beer,Beer,140,veg,,10,F,,,0,,,1,0,Yes
+"Paul Jhon","Paul Jhon",,PJ,,,,,Whiskey,Whiskey,0,veg,,10,F,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",500,,0,"60 Ml",550,,0,"90 Ml",600,,0,"180 Ml",1650,,0
+"Paul Jhon","Paul Jhon",,PJ,,,,,Whiskey,Whiskey,1650,veg,,,,,,0,,,1,0,Yes
+"Royal Stag Double Dark","Royal Stag Double Dark",,RSDD,,,,,Whiskey,Whiskey,0,veg,,10,F,,,0,,,1,0,Yes,,,,,Quantity,"30 Ml",90,,0,"60 Ml",150,,0,"90 Ml",190,,0,"180 Ml",200,,0
+"Javla Masala Fry","Javla Masala Fry",,JMF,,,,,Extra,Extra,150,non-veg,,5,F,,,0,,,1,0,Yes
+"Crab Boneless Butter Garlic","Crab Boneless Butter Garlic",,CBBG,,,,,"Konkan Swad Special Crabs","Konkan Swad Special Crabs",650,non-veg,,5,F,,,0,,,1,0,Yes
+"Fish Finger","Fish Finger",,FF,,,,,"Gomantaks Special Fry","Special Fry",650,non-veg,,5,F,,,0,,,1,0,Yes
+"Stuffed Pomfret","Stuffed Pomfret",,spt,,,,,"Gomantaks Special Fry","Special Fry",700,non-veg,,5,F,,,0,,,1,0,Yes
+"King Prawns Masala Fry","King Prawns Masala Fry",,kpmf,,,,,"Gomantak Special Fish Main Course","Gomantak Special Fish Main Course",500,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Sezwan Noodles","Chicken Sezwan Noodles",,csn,,,,,"Non - Veg Chinese Main Course","Non - Veg Chinese Main Course",290,non-veg,,5,F,,,0,,,1,0,Yes
+"Black Label 1lt","Black Label 1lt",,"Black Label 1Lt",,,,,Scotch,Scotch,4550,veg,,10,F,,,0,,,1,0,Yes
+"Iconiq White","Iconiq White",,"ICQW 180ML",,,,,Whiskey,Whiskey,170,veg,,10,F,,,0,,,1,0,Yes
+"Thecha Prawns","Thecha Prawns",,thp,,,,,"Konkan Special Items","Konkan Special Items",330,non-veg,,5,F,,,0,,,1,0,Yes
+"Mushroom Koliwada","Mushroom Koliwada",,mrk,,,,,"Gomantaks Special Fry","Special Fry",220,veg,,5,F,,,0,,,1,0,Yes
+"Egg Masala Fry","Egg Masala Fry",,emf,,,,,"Egg Dishes","Egg Dishes",150,egg,,5,F,,,0,,,1,0,Yes
+"Chicken Burnt Garlic Rice","Chicken Burnt Garlic Rice",,cbgr,,,,,"Non - Veg Chinese Main Course","Non - Veg Chinese Main Course",310,non-veg,,5,F,,,0,,,1,0,Yes
+"Lp  Strong","Lp  Strong",,LPS,,,,,Beer,Beer,165,veg,,10,F,,,0,,,1,0,Yes
+"Red Label 1ltr","Red Label 1ltr",,rl1,,,,,Scotch,Scotch,2450,veg,,10,F,,,0,,,1,0,Yes
+"Mc Dowell Luxury 180ml","Mc Dowell Luxury 180ml",,mcc,,,,,Whiskey,Whiskey,230,veg,,10,F,,,0,,,1,0,Yes
+"Mc Dowell No1 180ml","Mc Dowell No1 180ml",,mdd,,,,,Whiskey,Whiskey,160,veg,,10,F,,,0,,,1,0,Yes
+"Chicken Lolypop Full","Chicken Lolypop Full",,clf,,,,,"Non Veg Chinese Starters","Non Veg Chinese Starters",230,non-veg,,5,F,,,0,,,1,0,Yes
+"Satoni Red Wine 375ml","Satoni Red Wine 375ml",,srdw,,,,,"Port Wine","Port Wine",780,veg,,10,F,,,0,,,1,0,Yes
+"Chicken Lolipop Half","Chicken Lolipop Half",,clhp,,,,,"Non Veg Chinese Starters","Non Veg Chinese Starters",120,veg,,5,F,,,0,,,1,0,Yes
+"Crab Thali","Crab Thali",,crt,,,,,"Konkan Swad Special Thali (Thalis Available Only For Dine In)","Konkan Swad Special Thali (Thalis Available Only For Dine In)",450,non-veg,,5,F,,,0,,,1,0,Yes
+"Chicken Koliwada","Chicken Koliwada",,ckd,,,,,"Gomantaks Special Fry","Special Fry",300,non-veg,,5,F,,,0,,,1,0,Yes
+"Iconiq White 180ml","Iconiq White 180ml",,iw180,,,,,Whiskey,Whiskey,310,veg,,10,F,,,0,,,1,0,Yes
+"Mutton Rost Fry 6pc","Mutton Rost Fry 6pc",,mrf6,,,,,"Konkan Special Items","Konkan Special Items",300,veg,,5,F,,,0,,,1,0,Yes
+"Bacardi W Rum 180ml","Bacardi W Rum 180ml",,bwr,,,,,Rum,Rum,390,veg,,10,F,,,0,,,1,0,Yes
+"Budwiser Strong 650ml","Budwiser Strong 650ml",,bs,,,,,Beer,Beer,250,veg,,10,F,,,0,,,1,0,Yes
+"Budwiser Mild 650ml","Budwiser Mild 650ml",,bm6,,,,,Beer,Beer,245,veg,,10,F,,,0,,,1,0,Yes
+"Smirnoff Lime 180ml","Smirnoff Lime 180ml",,sml,,,,,Vodka,Vodka,405,veg,,10,F,,,0,,,1,0,Yes
+Monster,Monster,,mon,,,,,"Non-Veg Main Course","Non-Veg Main Course",125,veg,,5,F,,,0,,,1,0,Yes
+"Egg Chilly","Egg Chilly",,ec,,,,,"Egg Dishes","Egg Dishes",250,veg,,5,F,,,0,,,1,0,Yes
+"Paneer Garlic","Paneer Garlic",,"paneer garlic",,,,,"Veg Chinese Starters","Veg Chinese Starters",260,veg,,5,F,,,0,,,1,0,Yes
+"Smirnoff Jamun 180ml","Smirnoff Jamun 180ml",,sj,,,,,Vodka,Vodka,405,veg,,10,F,,,0,,,1,0,Yes
+"Smirnoff Mango 180ml","Smirnoff Mango 180ml",,smm,,,,,Vodka,Vodka,405,veg,,10,F,,,0,,,1,0,Yes
+"Prawns Crispy","Prawns Crispy",,pcp,,,,,"Konkan Swad Special Fish","Konkan Swad Special Fish",430,veg,,5,F,,,0,,,1,0,Yes
+"Chicken Hot Garlic","Chicken Hot Garlic",,chg,,,,,"Veg Chinese Starters","Veg Chinese Starters",270,veg,,5,F,,,0,,,1,0,Yes
+"Lp Mild 500ml","Lp Mild 500ml",,lm5,l,,,,Beer,Beer,100,veg,,10,F,,,0,,,1,0,Yes
+"Mix Fried Rice / Noodles","Mix Fried Rice / Noodles",,mfr,,,,,"Veg Main Course","Veg Main Course",380,veg,,5,F,,,0,,,1,0,Yes
+"Jameson Green 200ml","Jameson Green 200ml",,jmg,,,,,Whiskey,Whiskey,1450,veg,,10,F,,,0,,,1,0,Yes
+"Prawns Burnt Garlic Rice","Prawns Burnt Garlic Rice",,pbgr,,,,,"Non-Veg Main Course","Non-Veg Main Course",320,veg,,5,F,,,0,,,1,0,Yes
+"Mc Dark Rum 180ml","Mc Dark Rum 180ml",,Mdr,,,,,Rum,Rum,270,veg,,10,F,,,0,,,1,0,Yes
+"Mc Dry Gin 180ml","Mc Dry Gin 180ml",,MDG,,,,,Gin,Gin,350,veg,,10,F,,,0,,,1,0,Yes
+"Mc Vodka 180ml","Mc Vodka 180ml",,MCV,,,,,Vodka,Vodka,300,veg,,10,F,,,0,,,1,0,Yes
+"Extra  Liqur","Extra  Liqur",,EXTRA,,,,,Vodka,Vodka,0,veg,,10,F,,,0,,,1,0,Yes
+"Mcd Vodka 60ml","Mcd Vodka 60ml",,mv6,,,,,Vodka,Vodka,200,veg,,10,F,,,0,,,1,0,Yes
+"American Pride Vodka 180ml","American Pride Vodka 180ml",,apv,,,,,Vodka,Vodka,300,veg,,10,F,,,0,,,1,0,Yes
+"American Pride Vodka 90ml","American Pride Vodka 90ml",,apv180,,,,,Vodka,Vodka,160,veg,,10,F,,,0,,,1,0,Yes
+"Greater Than Gin 180ml","Greater Than Gin 180ml",,"GTG 180ML",,,,,Gin,Gin,850,veg,,10,F,,,0,,,1,0,Yes
+"Sukka Bhaji Wati","Sukka Bhaji Wati",,sbw,,,,,Extra,Extra,30,veg,,5,F,,,0,,,1,0,Yes
+"Kingfisher Mild 500ml","Kingfisher Mild 500ml",,km5,,,,,Beer,Beer,145,veg,,10,F,,,0,,,1,0,Yes
+"Haywards 180ml","Haywards 180ml",,hay,,,,,Whiskey,Whiskey,120,veg,,10,F,,,0,,,1,0,Yes
+"Old Monk 375ml","Old Monk 375ml",,old3,,,,,Rum,Rum,285,veg,,10,F,,,0,,,1,0,Yes
+"Oaks Silver 375ml","Oaks Silver 375ml",,oaks,,,,,Whiskey,Whiskey,470,veg,,10,F,,,0,,,1,0,Yes
+"Royal Stag 180ml","Royal Stag 180ml",,roy,,,,,Whiskey,Whiskey,220,veg,,10,F,,,0,,,1,0,Yes
+"Bro Code 330ml","Bro Code 330ml",,broc,,,,,"Port Wine","Port Wine",160,veg,,10,F,,,0,,,1,0,Yes
+"Masters Delight 180ml","Masters Delight 180ml",,mad,,,,,Whiskey,Whiskey,150,veg,,10,F,,,0,,,1,0,Yes
+"Sula Red 180ml","Sula Red 180ml",,sula,,,,,"Port Wine","Port Wine",560,veg,,10,F,,,0,,,1,0,Yes
+"Sula Red 90ml","Sula Red 90ml",,sul,,,,,"Port Wine","Port Wine",280,veg,,10,F,,,0,,,1,0,Yes
+"Harsh Dr Brandy 180ml","Harsh Dr Brandy 180ml",,hdb,,,,,Whiskey,Whiskey,150,veg,,10,F,,,0,,,1,0,Yes
+"Derby Special 180ml","Derby Special 180ml",,dsp180,,,,,Whiskey,Whiskey,160,veg,,10,F,,,0,,,1,0,Yes
